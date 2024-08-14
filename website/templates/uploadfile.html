@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}
+<title>Admin Upload File</title>
+{% endblock %}
+{% block content %}
+{% block customcss %}
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/upload.css') }}">
+{% endblock %}
+
+<form method="post" enctype=multipart/form-data class="w3-container w3-center w3-mobile w3-padding-24">
+    <label for="geschmack">Geschmack</label>
+    <input id="geschmack"
+           name="geschmack"
+           class="w3-input"
+           type="text"
+           placeholder="zb: Blueberry Ice, Strawberry Ice, Gummybear">
+    <label for="zügeanzahl">Züge</label>
+    <input id="zügeanzahl"
+           name="züge"
+           class="w3-input"
+           type="text"
+           placeholder="zb: 600,5k,12k,15k">
+    <label for="marke">Marke <a href="/marke_add">(Marke hinzufügen)</a></label>
+    <select id="marke" class="w3-select" name="marke">
+        <option value="" disabled selected>Marke auswählen</option>
+        {% block options %}
+            {% for marke in marken %}
+                <option value="{{ marke }}">{{ marke }}</option>
+            {% endfor %}
+        {% endblock %}
+    </select>
+    <label for="uploadedImage">Bild</label>
+    <input class="w3-input" id="uploadedImage" name="file" type=file>
+
+    <label for="anzahl">Anzahl (Wie viele gibt es)</label>
+    <input id="anzahl"
+           name="anzahl"
+           class="w3-input"
+           type="number"
+           placeholder="Nummer eingeben">
+
+
+    <div class="w3-padding-16">
+        <button class="w3-btn w3-indigo">Vape hinzufügen <i class="fa fa-plus"></i></button>
+    </div>
+</form>
+
+{% endblock %}

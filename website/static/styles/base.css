@@ -1,0 +1,31 @@
+@font-face {
+  font-family: GothamMedium;
+  src: local("GothamMedium.ttf");
+  src: url("GothamMedium.ttf");
+}
+
+body {
+  background-color: #121212;
+}
+
+.w3-bar {
+  background-color: #181818;
+  -webkit-box-shadow:0 0 20px blue;
+  -moz-box-shadow: 0 0 20px blue;
+  box-shadow:0 0 20px blue;
+
+}
+
+.w3-bar-item,.w3-dropdown-hover {
+  color: #FFFFFF;
+  text-decoration-line: none;
+}
+
+.w3-bar-item:hover,.w3-dropdown-hover:hover {
+  color: #B3B3B3;
+}
+
+w3-button:hover {
+  background-color: #181818;
+}
+

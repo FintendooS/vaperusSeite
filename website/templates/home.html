@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block customcss %}
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/home.css') }}">
+{% endblock %}
+{% block content %}
+     <br>
+     <p class="infotext">Such eine Vape aus, mach ein Screenshot und schick uns den auf unseren <a href="https://www.instagram.com/nrwvapes.online/">Instagram (hier klicken)</a></p>
+     <br>
+     {% block vapelist %}
+        {% for vape in vapes %}
+                <div class="card" style="max-width:300px;">
+                  <div class="w3-container">
+                  <img src="{{ url_for('admin.uploaded_file', filename=vape.image) }}" alt="{{ vape.image }}" style="width:100%;opacity:0.85;">
+                  <h4><b>{{ vape.marke }}</b></h4>
+                  <h3>{{vape.geschmack}}</h3>
+                  <p>({{vape.anzahl}}x Stück da)</p>
+                  <p>{{ vape.zuege }} Puffs</p>
+                  </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+        {% endfor %}
+    {% endblock %}
+{% endblock %}

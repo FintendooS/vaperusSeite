@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block customcss %}
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/login.css') }}">
+{% endblock %}
+{% block content %}
+<div class="w3-card-4">
+    <div class="w3-container w3-indigo">
+      <h2>Einloggen</h2>
+    </div>
+    <form method="post" class="w3-container">
+        <label for="username">Benutztername</label>
+        <input id="username"
+               name="username"
+               class="w3-input"
+               type="text"
+               placeholder="Benutzername eingeben..">
+
+        <label for="password">Passwort</label>
+        <input id="password"
+               name="password"
+               class="w3-input"
+               type="password"
+               placeholder="Passwort eingeben..">
+
+        <div class="w3-container w3-padding-16">
+            <button class="w3-btn w3-indigo w3-round-large">Einloggen</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

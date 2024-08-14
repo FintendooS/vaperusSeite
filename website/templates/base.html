@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/base.css') }}">
+        {% block customcss %}
+        {% endblock %}
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        {% block title %}
+        <title>NRW Vapes</title>
+        {% endblock %}
+    </head>
+    <body>
+        <div class="w3-bar">
+          <a href="/" class="w3-bar-item w3-mobile">Alle <i class="fa fa-refresh"></i></a>
+          {% if not user.is_authenticated %}
+            <a href="/login" class="w3-bar-item w3-mobile w3-right">Einloggen</a>
+          {% endif %}
+          {% if user.is_authenticated %}
+            <a href="/logout" class="w3-bar-item w3-mobile w3-right">Ausloggen</a>
+            <a href="/uploadfile" class="w3-bar-item w3-mobile w3-center w3-right" style="text-align: center">Vape Hinzufügen <i class="fa fa-plus"></i></a>
+            <a href="/delete_vape" class="w3-bar-item w3-mobile w3-center w3-right" style="text-align: center">Vape bearbeiten <i class="fa fa-minus"></i></a>
+            <a href="/marke_add" class="w3-bar-item w3-mobile w3-center w3-right" style="text-align: center">Marken bearbeiten <i class="fa fa-remove"></i></a>
+          {% endif %}
+        </div>
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    {% if category == 'error' %}
+                        <div class="w3-panel w3-red w3-display-container">
+                          <span onclick="this.parentElement.style.display='none'"
+                          class="w3-button w3-large w3-display-topright">&times;</span>
+                          <h3>Fehler!</h3>
+                          <p>{{ message }}</p>
+                        </div>
+                    {% else %}
+                        <div class="w3-panel w3-green w3-display-container">
+                          <span onclick="this.parentElement.style.display='none'"
+                          class="w3-button w3-large w3-display-topright">&times;</span>
+                          <h3>Erfolgreich!</h3>
+                          <p>{{ message }}</p>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>

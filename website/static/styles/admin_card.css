@@ -1,0 +1,22 @@
+body {
+    background-color: #121212;
+    margin: 0;
+}
+
+
+div {
+    color: white;
+    background-color: #181818;
+}
+label {
+    color: white;
+}
+
+.child_card {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.reservebutton {
+    display: inline-block;
+}

@@ -1,0 +1,902 @@
+[Wed May 15 10:42:04.055477 2024] [wsgi:error] [pid 6239:tid 140691676321536] [remote 37.201.160.212:4404] mod_wsgi (pid=6239): Target WSGI script '/var/www/vapeApp/app.wsgi' does not contain WSGI application 'application'.
+[Wed May 15 10:42:04.238214 2024] [wsgi:error] [pid 6239:tid 140691642750720] [remote 37.201.160.212:4405] mod_wsgi (pid=6239): Target WSGI script '/var/www/vapeApp/app.wsgi' does not contain WSGI application 'application'.
+[Wed May 15 10:49:45.314635 2024] [wsgi:error] [pid 6494:tid 140691676321536] [remote 37.201.160.212:4532] mod_wsgi (pid=6494): Failed to exec Python script file '/var/www/vapeApp/app.wsgi'.
+[Wed May 15 10:49:45.314729 2024] [wsgi:error] [pid 6494:tid 140691676321536] [remote 37.201.160.212:4532] mod_wsgi (pid=6494): Exception occurred processing WSGI script '/var/www/vapeApp/app.wsgi'.
+[Wed May 15 10:49:45.324657 2024] [wsgi:error] [pid 6494:tid 140691676321536] [remote 37.201.160.212:4532] Traceback (most recent call last):
+[Wed May 15 10:49:45.324684 2024] [wsgi:error] [pid 6494:tid 140691676321536] [remote 37.201.160.212:4532]   File "/var/www/vapeApp/app.wsgi", line 4, in <module>
+[Wed May 15 10:49:45.324689 2024] [wsgi:error] [pid 6494:tid 140691676321536] [remote 37.201.160.212:4532]     from website import app as application
+[Wed May 15 10:49:45.324704 2024] [wsgi:error] [pid 6494:tid 140691676321536] [remote 37.201.160.212:4532] ModuleNotFoundError: No module named 'website'
+[Wed May 15 10:50:21.666103 2024] [wsgi:error] [pid 6563:tid 140691676321536] [remote 37.201.160.212:4535] mod_wsgi (pid=6563): Failed to exec Python script file '/var/www/vapeApp/app.wsgi'.
+[Wed May 15 10:50:21.666200 2024] [wsgi:error] [pid 6563:tid 140691676321536] [remote 37.201.160.212:4535] mod_wsgi (pid=6563): Exception occurred processing WSGI script '/var/www/vapeApp/app.wsgi'.
+[Wed May 15 10:50:21.685925 2024] [wsgi:error] [pid 6563:tid 140691676321536] [remote 37.201.160.212:4535] Traceback (most recent call last):
+[Wed May 15 10:50:21.686030 2024] [wsgi:error] [pid 6563:tid 140691676321536] [remote 37.201.160.212:4535]   File "/var/www/vapeApp/app.wsgi", line 4, in <module>
+[Wed May 15 10:50:21.686045 2024] [wsgi:error] [pid 6563:tid 140691676321536] [remote 37.201.160.212:4535]     from website import app as application
+[Wed May 15 10:50:21.686066 2024] [wsgi:error] [pid 6563:tid 140691676321536] [remote 37.201.160.212:4535]   File "/var/www/vapeApp/website/__init__.py", line 57, in <module>
+[Wed May 15 10:50:21.686080 2024] [wsgi:error] [pid 6563:tid 140691676321536] [remote 37.201.160.212:4535]     app = create_app()
+[Wed May 15 10:50:21.686100 2024] [wsgi:error] [pid 6563:tid 140691676321536] [remote 37.201.160.212:4535]   File "/var/www/vapeApp/website/__init__.py", line 21, in create_app
+[Wed May 15 10:50:21.686114 2024] [wsgi:error] [pid 6563:tid 140691676321536] [remote 37.201.160.212:4535]     os.makedirs('uploads', exist_ok=True)
+[Wed May 15 10:50:21.686133 2024] [wsgi:error] [pid 6563:tid 140691676321536] [remote 37.201.160.212:4535]   File "/usr/lib/python3.7/os.py", line 221, in makedirs
+[Wed May 15 10:50:21.686147 2024] [wsgi:error] [pid 6563:tid 140691676321536] [remote 37.201.160.212:4535]     mkdir(name, mode)
+[Wed May 15 10:50:21.686185 2024] [wsgi:error] [pid 6563:tid 140691676321536] [remote 37.201.160.212:4535] PermissionError: [Errno 13] Permission denied: 'uploads'
+[Wed May 15 10:52:54.009509 2024] [wsgi:error] [pid 6563:tid 140691642750720] [remote 123.8.83.91:56940] mod_wsgi (pid=6563): Failed to exec Python script file '/var/www/vapeApp/app.wsgi'.
+[Wed May 15 10:52:54.009606 2024] [wsgi:error] [pid 6563:tid 140691642750720] [remote 123.8.83.91:56940] mod_wsgi (pid=6563): Exception occurred processing WSGI script '/var/www/vapeApp/app.wsgi'.
+[Wed May 15 10:52:54.009828 2024] [wsgi:error] [pid 6563:tid 140691642750720] [remote 123.8.83.91:56940] Traceback (most recent call last):
+[Wed May 15 10:52:54.009910 2024] [wsgi:error] [pid 6563:tid 140691642750720] [remote 123.8.83.91:56940]   File "/var/www/vapeApp/app.wsgi", line 4, in <module>
+[Wed May 15 10:52:54.009924 2024] [wsgi:error] [pid 6563:tid 140691642750720] [remote 123.8.83.91:56940]     from website import app as application
+[Wed May 15 10:52:54.009978 2024] [wsgi:error] [pid 6563:tid 140691642750720] [remote 123.8.83.91:56940]   File "/var/www/vapeApp/website/__init__.py", line 57, in <module>
+[Wed May 15 10:52:54.009990 2024] [wsgi:error] [pid 6563:tid 140691642750720] [remote 123.8.83.91:56940]     app = create_app()
+[Wed May 15 10:52:54.010009 2024] [wsgi:error] [pid 6563:tid 140691642750720] [remote 123.8.83.91:56940]   File "/var/www/vapeApp/website/__init__.py", line 21, in create_app
+[Wed May 15 10:52:54.010021 2024] [wsgi:error] [pid 6563:tid 140691642750720] [remote 123.8.83.91:56940]     os.makedirs('uploads', exist_ok=True)
+[Wed May 15 10:52:54.010040 2024] [wsgi:error] [pid 6563:tid 140691642750720] [remote 123.8.83.91:56940]   File "/usr/lib/python3.7/os.py", line 221, in makedirs
+[Wed May 15 10:52:54.010052 2024] [wsgi:error] [pid 6563:tid 140691642750720] [remote 123.8.83.91:56940]     mkdir(name, mode)
+[Wed May 15 10:52:54.010087 2024] [wsgi:error] [pid 6563:tid 140691642750720] [remote 123.8.83.91:56940] PermissionError: [Errno 13] Permission denied: 'uploads'
+[Wed May 15 10:56:26.884449 2024] [wsgi:error] [pid 6651:tid 140691676321536] [remote 37.201.160.212:4612] mod_wsgi (pid=6651): Failed to exec Python script file '/var/www/vapeApp/app.wsgi'.
+[Wed May 15 10:56:26.884505 2024] [wsgi:error] [pid 6651:tid 140691676321536] [remote 37.201.160.212:4612] mod_wsgi (pid=6651): Exception occurred processing WSGI script '/var/www/vapeApp/app.wsgi'.
+[Wed May 15 10:56:26.884996 2024] [wsgi:error] [pid 6651:tid 140691676321536] [remote 37.201.160.212:4612] Traceback (most recent call last):
+[Wed May 15 10:56:26.885032 2024] [wsgi:error] [pid 6651:tid 140691676321536] [remote 37.201.160.212:4612]   File "/var/www/vapeApp/app.wsgi", line 4, in <module>
+[Wed May 15 10:56:26.885038 2024] [wsgi:error] [pid 6651:tid 140691676321536] [remote 37.201.160.212:4612]     from website import app as application
+[Wed May 15 10:56:26.885046 2024] [wsgi:error] [pid 6651:tid 140691676321536] [remote 37.201.160.212:4612]   File "/var/www/vapeApp/website/__init__.py", line 57, in <module>
+[Wed May 15 10:56:26.885051 2024] [wsgi:error] [pid 6651:tid 140691676321536] [remote 37.201.160.212:4612]     app = create_app()
+[Wed May 15 10:56:26.885058 2024] [wsgi:error] [pid 6651:tid 140691676321536] [remote 37.201.160.212:4612]   File "/var/www/vapeApp/website/__init__.py", line 21, in create_app
+[Wed May 15 10:56:26.885063 2024] [wsgi:error] [pid 6651:tid 140691676321536] [remote 37.201.160.212:4612]     os.makedirs('uploads', exist_ok=True)
+[Wed May 15 10:56:26.885071 2024] [wsgi:error] [pid 6651:tid 140691676321536] [remote 37.201.160.212:4612]   File "/usr/lib/python3.7/os.py", line 221, in makedirs
+[Wed May 15 10:56:26.885076 2024] [wsgi:error] [pid 6651:tid 140691676321536] [remote 37.201.160.212:4612]     mkdir(name, mode)
+[Wed May 15 10:56:26.885090 2024] [wsgi:error] [pid 6651:tid 140691676321536] [remote 37.201.160.212:4612] PermissionError: [Errno 13] Permission denied: 'uploads'
+[Wed May 15 10:59:18.203088 2024] [wsgi:error] [pid 6737:tid 140691676321536] [remote 37.201.160.212:4647] mod_wsgi (pid=6737): Failed to exec Python script file '/var/www/vapeApp/app.wsgi'.
+[Wed May 15 10:59:18.203143 2024] [wsgi:error] [pid 6737:tid 140691676321536] [remote 37.201.160.212:4647] mod_wsgi (pid=6737): Exception occurred processing WSGI script '/var/www/vapeApp/app.wsgi'.
+[Wed May 15 10:59:18.203639 2024] [wsgi:error] [pid 6737:tid 140691676321536] [remote 37.201.160.212:4647] Traceback (most recent call last):
+[Wed May 15 10:59:18.203674 2024] [wsgi:error] [pid 6737:tid 140691676321536] [remote 37.201.160.212:4647]   File "/var/www/vapeApp/app.wsgi", line 4, in <module>
+[Wed May 15 10:59:18.203680 2024] [wsgi:error] [pid 6737:tid 140691676321536] [remote 37.201.160.212:4647]     from website import app as application
+[Wed May 15 10:59:18.203688 2024] [wsgi:error] [pid 6737:tid 140691676321536] [remote 37.201.160.212:4647]   File "/var/www/vapeApp/website/__init__.py", line 57, in <module>
+[Wed May 15 10:59:18.203707 2024] [wsgi:error] [pid 6737:tid 140691676321536] [remote 37.201.160.212:4647]     app = create_app()
+[Wed May 15 10:59:18.203714 2024] [wsgi:error] [pid 6737:tid 140691676321536] [remote 37.201.160.212:4647]   File "/var/www/vapeApp/website/__init__.py", line 21, in create_app
+[Wed May 15 10:59:18.203719 2024] [wsgi:error] [pid 6737:tid 140691676321536] [remote 37.201.160.212:4647]     os.makedirs('uploads', exist_ok=True)
+[Wed May 15 10:59:18.203726 2024] [wsgi:error] [pid 6737:tid 140691676321536] [remote 37.201.160.212:4647]   File "/usr/lib/python3.7/os.py", line 221, in makedirs
+[Wed May 15 10:59:18.203730 2024] [wsgi:error] [pid 6737:tid 140691676321536] [remote 37.201.160.212:4647]     mkdir(name, mode)
+[Wed May 15 10:59:18.203745 2024] [wsgi:error] [pid 6737:tid 140691676321536] [remote 37.201.160.212:4647] PermissionError: [Errno 13] Permission denied: 'uploads'
+[Wed May 15 10:59:36.650297 2024] [wsgi:error] [pid 6737:tid 140691642750720] [remote 37.201.160.212:4651] mod_wsgi (pid=6737): Failed to exec Python script file '/var/www/vapeApp/app.wsgi'.
+[Wed May 15 10:59:36.650383 2024] [wsgi:error] [pid 6737:tid 140691642750720] [remote 37.201.160.212:4651] mod_wsgi (pid=6737): Exception occurred processing WSGI script '/var/www/vapeApp/app.wsgi'.
+[Wed May 15 10:59:36.650602 2024] [wsgi:error] [pid 6737:tid 140691642750720] [remote 37.201.160.212:4651] Traceback (most recent call last):
+[Wed May 15 10:59:36.650703 2024] [wsgi:error] [pid 6737:tid 140691642750720] [remote 37.201.160.212:4651]   File "/var/www/vapeApp/app.wsgi", line 4, in <module>
+[Wed May 15 10:59:36.650718 2024] [wsgi:error] [pid 6737:tid 140691642750720] [remote 37.201.160.212:4651]     from website import app as application
+[Wed May 15 10:59:36.650740 2024] [wsgi:error] [pid 6737:tid 140691642750720] [remote 37.201.160.212:4651]   File "/var/www/vapeApp/website/__init__.py", line 57, in <module>
+[Wed May 15 10:59:36.650753 2024] [wsgi:error] [pid 6737:tid 140691642750720] [remote 37.201.160.212:4651]     app = create_app()
+[Wed May 15 10:59:36.650773 2024] [wsgi:error] [pid 6737:tid 140691642750720] [remote 37.201.160.212:4651]   File "/var/www/vapeApp/website/__init__.py", line 21, in create_app
+[Wed May 15 10:59:36.650786 2024] [wsgi:error] [pid 6737:tid 140691642750720] [remote 37.201.160.212:4651]     os.makedirs('uploads', exist_ok=True)
+[Wed May 15 10:59:36.650807 2024] [wsgi:error] [pid 6737:tid 140691642750720] [remote 37.201.160.212:4651]   File "/usr/lib/python3.7/os.py", line 221, in makedirs
+[Wed May 15 10:59:36.650820 2024] [wsgi:error] [pid 6737:tid 140691642750720] [remote 37.201.160.212:4651]     mkdir(name, mode)
+[Wed May 15 10:59:36.650881 2024] [wsgi:error] [pid 6737:tid 140691642750720] [remote 37.201.160.212:4651] PermissionError: [Errno 13] Permission denied: 'uploads'
+[Wed May 15 10:59:38.206868 2024] [wsgi:error] [pid 6737:tid 140691676321536] [remote 37.201.160.212:4652] mod_wsgi (pid=6737): Failed to exec Python script file '/var/www/vapeApp/app.wsgi'.
+[Wed May 15 10:59:38.206943 2024] [wsgi:error] [pid 6737:tid 140691676321536] [remote 37.201.160.212:4652] mod_wsgi (pid=6737): Exception occurred processing WSGI script '/var/www/vapeApp/app.wsgi'.
+[Wed May 15 10:59:38.207167 2024] [wsgi:error] [pid 6737:tid 140691676321536] [remote 37.201.160.212:4652] Traceback (most recent call last):
+[Wed May 15 10:59:38.207256 2024] [wsgi:error] [pid 6737:tid 140691676321536] [remote 37.201.160.212:4652]   File "/var/www/vapeApp/app.wsgi", line 4, in <module>
+[Wed May 15 10:59:38.207270 2024] [wsgi:error] [pid 6737:tid 140691676321536] [remote 37.201.160.212:4652]     from website import app as application
+[Wed May 15 10:59:38.207292 2024] [wsgi:error] [pid 6737:tid 140691676321536] [remote 37.201.160.212:4652]   File "/var/www/vapeApp/website/__init__.py", line 57, in <module>
+[Wed May 15 10:59:38.207305 2024] [wsgi:error] [pid 6737:tid 140691676321536] [remote 37.201.160.212:4652]     app = create_app()
+[Wed May 15 10:59:38.207325 2024] [wsgi:error] [pid 6737:tid 140691676321536] [remote 37.201.160.212:4652]   File "/var/www/vapeApp/website/__init__.py", line 21, in create_app
+[Wed May 15 10:59:38.207356 2024] [wsgi:error] [pid 6737:tid 140691676321536] [remote 37.201.160.212:4652]     os.makedirs('uploads', exist_ok=True)
+[Wed May 15 10:59:38.207376 2024] [wsgi:error] [pid 6737:tid 140691676321536] [remote 37.201.160.212:4652]   File "/usr/lib/python3.7/os.py", line 221, in makedirs
+[Wed May 15 10:59:38.207388 2024] [wsgi:error] [pid 6737:tid 140691676321536] [remote 37.201.160.212:4652]     mkdir(name, mode)
+[Wed May 15 10:59:38.207423 2024] [wsgi:error] [pid 6737:tid 140691676321536] [remote 37.201.160.212:4652] PermissionError: [Errno 13] Permission denied: 'uploads'
+[Wed May 15 11:02:41.097844 2024] [wsgi:error] [pid 6889:tid 140691676321536] [remote 37.201.160.212:4681] mod_wsgi (pid=6889): Failed to exec Python script file '/var/www/vapeApp/app.wsgi'.
+[Wed May 15 11:02:41.097899 2024] [wsgi:error] [pid 6889:tid 140691676321536] [remote 37.201.160.212:4681] mod_wsgi (pid=6889): Exception occurred processing WSGI script '/var/www/vapeApp/app.wsgi'.
+[Wed May 15 11:02:41.098390 2024] [wsgi:error] [pid 6889:tid 140691676321536] [remote 37.201.160.212:4681] Traceback (most recent call last):
+[Wed May 15 11:02:41.098427 2024] [wsgi:error] [pid 6889:tid 140691676321536] [remote 37.201.160.212:4681]   File "/var/www/vapeApp/app.wsgi", line 4, in <module>
+[Wed May 15 11:02:41.098432 2024] [wsgi:error] [pid 6889:tid 140691676321536] [remote 37.201.160.212:4681]     from website import app as application
+[Wed May 15 11:02:41.098440 2024] [wsgi:error] [pid 6889:tid 140691676321536] [remote 37.201.160.212:4681]   File "/var/www/vapeApp/website/__init__.py", line 57, in <module>
+[Wed May 15 11:02:41.098445 2024] [wsgi:error] [pid 6889:tid 140691676321536] [remote 37.201.160.212:4681]     app = create_app()
+[Wed May 15 11:02:41.098453 2024] [wsgi:error] [pid 6889:tid 140691676321536] [remote 37.201.160.212:4681]   File "/var/www/vapeApp/website/__init__.py", line 21, in create_app
+[Wed May 15 11:02:41.098458 2024] [wsgi:error] [pid 6889:tid 140691676321536] [remote 37.201.160.212:4681]     os.makedirs('uploads', exist_ok=True)
+[Wed May 15 11:02:41.098465 2024] [wsgi:error] [pid 6889:tid 140691676321536] [remote 37.201.160.212:4681]   File "/usr/lib/python3.7/os.py", line 221, in makedirs
+[Wed May 15 11:02:41.098470 2024] [wsgi:error] [pid 6889:tid 140691676321536] [remote 37.201.160.212:4681]     mkdir(name, mode)
+[Wed May 15 11:02:41.098485 2024] [wsgi:error] [pid 6889:tid 140691676321536] [remote 37.201.160.212:4681] PermissionError: [Errno 13] Permission denied: 'uploads'
+[Wed May 15 11:08:12.277495 2024] [wsgi:error] [pid 6996:tid 140691676321536] [remote 37.201.160.212:4760] mod_wsgi (pid=6996): Failed to exec Python script file '/var/www/vapeApp/app.wsgi'.
+[Wed May 15 11:08:12.277551 2024] [wsgi:error] [pid 6996:tid 140691676321536] [remote 37.201.160.212:4760] mod_wsgi (pid=6996): Exception occurred processing WSGI script '/var/www/vapeApp/app.wsgi'.
+[Wed May 15 11:08:12.278044 2024] [wsgi:error] [pid 6996:tid 140691676321536] [remote 37.201.160.212:4760] Traceback (most recent call last):
+[Wed May 15 11:08:12.278079 2024] [wsgi:error] [pid 6996:tid 140691676321536] [remote 37.201.160.212:4760]   File "/var/www/vapeApp/app.wsgi", line 4, in <module>
+[Wed May 15 11:08:12.278084 2024] [wsgi:error] [pid 6996:tid 140691676321536] [remote 37.201.160.212:4760]     from website import app as application
+[Wed May 15 11:08:12.278093 2024] [wsgi:error] [pid 6996:tid 140691676321536] [remote 37.201.160.212:4760]   File "/var/www/vapeApp/website/__init__.py", line 57, in <module>
+[Wed May 15 11:08:12.278098 2024] [wsgi:error] [pid 6996:tid 140691676321536] [remote 37.201.160.212:4760]     app = create_app()
+[Wed May 15 11:08:12.278105 2024] [wsgi:error] [pid 6996:tid 140691676321536] [remote 37.201.160.212:4760]   File "/var/www/vapeApp/website/__init__.py", line 21, in create_app
+[Wed May 15 11:08:12.278110 2024] [wsgi:error] [pid 6996:tid 140691676321536] [remote 37.201.160.212:4760]     os.makedirs('uploads', exist_ok=True)
+[Wed May 15 11:08:12.278127 2024] [wsgi:error] [pid 6996:tid 140691676321536] [remote 37.201.160.212:4760]   File "/usr/lib/python3.7/os.py", line 221, in makedirs
+[Wed May 15 11:08:12.278131 2024] [wsgi:error] [pid 6996:tid 140691676321536] [remote 37.201.160.212:4760]     mkdir(name, mode)
+[Wed May 15 11:08:12.278146 2024] [wsgi:error] [pid 6996:tid 140691676321536] [remote 37.201.160.212:4760] PermissionError: [Errno 13] Permission denied: 'uploads'
+[Wed May 15 11:13:55.705366 2024] [wsgi:error] [pid 7079:tid 140691676321536] [remote 37.201.160.212:4880] mod_wsgi (pid=7079): Failed to exec Python script file '/var/www/vapeApp/app.wsgi'.
+[Wed May 15 11:13:55.705420 2024] [wsgi:error] [pid 7079:tid 140691676321536] [remote 37.201.160.212:4880] mod_wsgi (pid=7079): Exception occurred processing WSGI script '/var/www/vapeApp/app.wsgi'.
+[Wed May 15 11:13:55.705916 2024] [wsgi:error] [pid 7079:tid 140691676321536] [remote 37.201.160.212:4880] Traceback (most recent call last):
+[Wed May 15 11:13:55.705950 2024] [wsgi:error] [pid 7079:tid 140691676321536] [remote 37.201.160.212:4880]   File "/var/www/vapeApp/app.wsgi", line 4, in <module>
+[Wed May 15 11:13:55.705956 2024] [wsgi:error] [pid 7079:tid 140691676321536] [remote 37.201.160.212:4880]     from website import app as application
+[Wed May 15 11:13:55.705964 2024] [wsgi:error] [pid 7079:tid 140691676321536] [remote 37.201.160.212:4880]   File "/var/www/vapeApp/website/__init__.py", line 57, in <module>
+[Wed May 15 11:13:55.705969 2024] [wsgi:error] [pid 7079:tid 140691676321536] [remote 37.201.160.212:4880]     app = create_app()
+[Wed May 15 11:13:55.705977 2024] [wsgi:error] [pid 7079:tid 140691676321536] [remote 37.201.160.212:4880]   File "/var/www/vapeApp/website/__init__.py", line 21, in create_app
+[Wed May 15 11:13:55.705982 2024] [wsgi:error] [pid 7079:tid 140691676321536] [remote 37.201.160.212:4880]     os.makedirs('uploads', exist_ok=True)
+[Wed May 15 11:13:55.705989 2024] [wsgi:error] [pid 7079:tid 140691676321536] [remote 37.201.160.212:4880]   File "/usr/lib/python3.7/os.py", line 221, in makedirs
+[Wed May 15 11:13:55.705994 2024] [wsgi:error] [pid 7079:tid 140691676321536] [remote 37.201.160.212:4880]     mkdir(name, mode)
+[Wed May 15 11:13:55.706009 2024] [wsgi:error] [pid 7079:tid 140691676321536] [remote 37.201.160.212:4880] PermissionError: [Errno 13] Permission denied: 'uploads'
+[Wed May 15 11:15:30.030360 2024] [wsgi:error] [pid 7155:tid 140691676321536] [remote 37.201.160.212:4898] mod_wsgi (pid=7155): Failed to exec Python script file '/var/www/vapeApp/app.wsgi'.
+[Wed May 15 11:15:30.030415 2024] [wsgi:error] [pid 7155:tid 140691676321536] [remote 37.201.160.212:4898] mod_wsgi (pid=7155): Exception occurred processing WSGI script '/var/www/vapeApp/app.wsgi'.
+[Wed May 15 11:15:30.030915 2024] [wsgi:error] [pid 7155:tid 140691676321536] [remote 37.201.160.212:4898] Traceback (most recent call last):
+[Wed May 15 11:15:30.030951 2024] [wsgi:error] [pid 7155:tid 140691676321536] [remote 37.201.160.212:4898]   File "/var/www/vapeApp/app.wsgi", line 4, in <module>
+[Wed May 15 11:15:30.030956 2024] [wsgi:error] [pid 7155:tid 140691676321536] [remote 37.201.160.212:4898]     from website import app as application
+[Wed May 15 11:15:30.030965 2024] [wsgi:error] [pid 7155:tid 140691676321536] [remote 37.201.160.212:4898]   File "/var/www/vapeApp/website/__init__.py", line 57, in <module>
+[Wed May 15 11:15:30.030970 2024] [wsgi:error] [pid 7155:tid 140691676321536] [remote 37.201.160.212:4898]     app = create_app()
+[Wed May 15 11:15:30.030977 2024] [wsgi:error] [pid 7155:tid 140691676321536] [remote 37.201.160.212:4898]   File "/var/www/vapeApp/website/__init__.py", line 21, in create_app
+[Wed May 15 11:15:30.030982 2024] [wsgi:error] [pid 7155:tid 140691676321536] [remote 37.201.160.212:4898]     os.makedirs('uploads', exist_ok=True)
+[Wed May 15 11:15:30.030990 2024] [wsgi:error] [pid 7155:tid 140691676321536] [remote 37.201.160.212:4898]   File "/usr/lib/python3.7/os.py", line 221, in makedirs
+[Wed May 15 11:15:30.030994 2024] [wsgi:error] [pid 7155:tid 140691676321536] [remote 37.201.160.212:4898]     mkdir(name, mode)
+[Wed May 15 11:15:30.031019 2024] [wsgi:error] [pid 7155:tid 140691676321536] [remote 37.201.160.212:4898] PermissionError: [Errno 13] Permission denied: 'uploads'
+[Wed May 15 11:16:22.817285 2024] [wsgi:error] [pid 7234:tid 140691676321536] Database created!
+[Wed May 15 11:16:32.184920 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:4907] [2024-05-15 11:16:32,095] ERROR in app: Exception on /login [POST]
+[Wed May 15 11:16:32.184960 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:4907] Traceback (most recent call last):
+[Wed May 15 11:16:32.184973 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:4907]   File "/usr/lib/python3.7/hashlib.py", line 150, in __hash_new
+[Wed May 15 11:16:32.184986 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:4907]     return _hashlib.new(name, data)
+[Wed May 15 11:16:32.184998 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:4907] ValueError: unsupported hash type
+[Wed May 15 11:16:32.185010 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:4907] 
+[Wed May 15 11:16:32.185022 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:4907] During handling of the above exception, another exception occurred:
+[Wed May 15 11:16:32.185034 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:4907] 
+[Wed May 15 11:16:32.185045 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:4907] Traceback (most recent call last):
+[Wed May 15 11:16:32.185057 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:4907]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2529, in wsgi_app
+[Wed May 15 11:16:32.185069 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:4907]     response = self.full_dispatch_request()
+[Wed May 15 11:16:32.185081 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:4907]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1825, in full_dispatch_request
+[Wed May 15 11:16:32.185094 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:4907]     rv = self.handle_user_exception(e)
+[Wed May 15 11:16:32.185106 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:4907]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1823, in full_dispatch_request
+[Wed May 15 11:16:32.185118 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:4907]     rv = self.dispatch_request()
+[Wed May 15 11:16:32.185130 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:4907]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+[Wed May 15 11:16:32.185142 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:4907]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Wed May 15 11:16:32.185154 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:4907]   File "/var/www/vapeApp/website/auth.py", line 38, in login
+[Wed May 15 11:16:32.185166 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:4907]     if check_password_hash(user.password, password):
+[Wed May 15 11:16:32.185178 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:4907]   File "/usr/local/lib/python3.7/dist-packages/werkzeug/security.py", line 107, in check_password_hash
+[Wed May 15 11:16:32.185191 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:4907]     return hmac.compare_digest(_hash_internal(method, salt, password)[0], hashval)
+[Wed May 15 11:16:32.185203 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:4907]   File "/usr/local/lib/python3.7/dist-packages/werkzeug/security.py", line 55, in _hash_internal
+[Wed May 15 11:16:32.185215 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:4907]     return hmac.new(salt, password, method).hexdigest(), method
+[Wed May 15 11:16:32.185249 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:4907]   File "/usr/lib/python3.7/hmac.py", line 153, in new
+[Wed May 15 11:16:32.185261 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:4907]     return HMAC(key, msg, digestmod)
+[Wed May 15 11:16:32.185272 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:4907]   File "/usr/lib/python3.7/hmac.py", line 65, in __init__
+[Wed May 15 11:16:32.185282 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:4907]     self.outer = self.digest_cons()
+[Wed May 15 11:16:32.185293 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:4907]   File "/usr/lib/python3.7/hmac.py", line 61, in <lambda>
+[Wed May 15 11:16:32.185303 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:4907]     self.digest_cons = lambda d=b'': _hashlib.new(digestmod, d)
+[Wed May 15 11:16:32.185314 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:4907]   File "/usr/lib/python3.7/hashlib.py", line 156, in __hash_new
+[Wed May 15 11:16:32.185325 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:4907]     return __get_builtin_constructor(name)(data)
+[Wed May 15 11:16:32.185336 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:4907]   File "/usr/lib/python3.7/hashlib.py", line 113, in __get_builtin_constructor
+[Wed May 15 11:16:32.185347 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:4907]     raise ValueError('unsupported hash type ' + name)
+[Wed May 15 11:16:32.185357 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:4907] ValueError: unsupported hash type scrypt:32768:8:1
+[Wed May 15 11:38:41.900142 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:5962] Account erstellt: admin Passwort: 123 success
+[Wed May 15 11:39:06.728530 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:5974] [2024-05-15 11:39:06,644] ERROR in app: Exception on /uploadfile [POST]
+[Wed May 15 11:39:06.728571 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:5974] Traceback (most recent call last):
+[Wed May 15 11:39:06.728584 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:5974]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2529, in wsgi_app
+[Wed May 15 11:39:06.728597 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:5974]     response = self.full_dispatch_request()
+[Wed May 15 11:39:06.728610 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:5974]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1825, in full_dispatch_request
+[Wed May 15 11:39:06.728623 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:5974]     rv = self.handle_user_exception(e)
+[Wed May 15 11:39:06.728635 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:5974]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1823, in full_dispatch_request
+[Wed May 15 11:39:06.728648 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:5974]     rv = self.dispatch_request()
+[Wed May 15 11:39:06.728660 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:5974]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+[Wed May 15 11:39:06.728672 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:5974]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Wed May 15 11:39:06.728685 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:5974]   File "/usr/local/lib/python3.7/dist-packages/flask_login/utils.py", line 290, in decorated_view
+[Wed May 15 11:39:06.728697 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:5974]     return current_app.ensure_sync(func)(*args, **kwargs)
+[Wed May 15 11:39:06.728726 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:5974]   File "/var/www/vapeApp/website/admin.py", line 128, in uploadfile
+[Wed May 15 11:39:06.728738 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:5974]     file.save(os.path.join(UPLOAD_FOLDER, filename))
+[Wed May 15 11:39:06.728749 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:5974]   File "/usr/local/lib/python3.7/dist-packages/werkzeug/datastructures.py", line 3002, in save
+[Wed May 15 11:39:06.728760 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:5974]     dst = open(dst, "wb")
+[Wed May 15 11:39:06.728771 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:5974] FileNotFoundError: [Errno 2] No such file or directory: 'uploads/1_blueberry_strawberry_elfbarus.png'
+[Wed May 15 11:40:08.745788 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:5981] [2024-05-15 11:40:08,745] ERROR in app: Exception on /uploadfile [POST]
+[Wed May 15 11:40:08.745850 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:5981] Traceback (most recent call last):
+[Wed May 15 11:40:08.745864 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:5981]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2529, in wsgi_app
+[Wed May 15 11:40:08.745877 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:5981]     response = self.full_dispatch_request()
+[Wed May 15 11:40:08.745901 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:5981]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1825, in full_dispatch_request
+[Wed May 15 11:40:08.745915 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:5981]     rv = self.handle_user_exception(e)
+[Wed May 15 11:40:08.745928 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:5981]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1823, in full_dispatch_request
+[Wed May 15 11:40:08.745941 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:5981]     rv = self.dispatch_request()
+[Wed May 15 11:40:08.745954 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:5981]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+[Wed May 15 11:40:08.745967 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:5981]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Wed May 15 11:40:08.745979 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:5981]   File "/usr/local/lib/python3.7/dist-packages/flask_login/utils.py", line 290, in decorated_view
+[Wed May 15 11:40:08.745992 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:5981]     return current_app.ensure_sync(func)(*args, **kwargs)
+[Wed May 15 11:40:08.746004 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:5981]   File "/var/www/vapeApp/website/admin.py", line 128, in uploadfile
+[Wed May 15 11:40:08.746016 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:5981]     file.save(os.path.join(UPLOAD_FOLDER, filename))
+[Wed May 15 11:40:08.746029 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:5981]   File "/usr/local/lib/python3.7/dist-packages/werkzeug/datastructures.py", line 3002, in save
+[Wed May 15 11:40:08.746041 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:5981]     dst = open(dst, "wb")
+[Wed May 15 11:40:08.746054 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:5981] FileNotFoundError: [Errno 2] No such file or directory: 'uploads/1_blueberry_strawberry_elfbarus.png'
+[Wed May 15 11:40:29.111303 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:63240] ImmutableMultiDict([])
+[Wed May 15 11:41:53.316645 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:6001] [2024-05-15 11:41:53,316] ERROR in app: Exception on /uploadfile [POST]
+[Wed May 15 11:41:53.316710 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:6001] Traceback (most recent call last):
+[Wed May 15 11:41:53.316722 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:6001]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2529, in wsgi_app
+[Wed May 15 11:41:53.316734 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:6001]     response = self.full_dispatch_request()
+[Wed May 15 11:41:53.316746 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:6001]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1825, in full_dispatch_request
+[Wed May 15 11:41:53.316757 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:6001]     rv = self.handle_user_exception(e)
+[Wed May 15 11:41:53.316768 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:6001]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1823, in full_dispatch_request
+[Wed May 15 11:41:53.316779 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:6001]     rv = self.dispatch_request()
+[Wed May 15 11:41:53.316790 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:6001]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+[Wed May 15 11:41:53.316801 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:6001]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Wed May 15 11:41:53.316812 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:6001]   File "/usr/local/lib/python3.7/dist-packages/flask_login/utils.py", line 290, in decorated_view
+[Wed May 15 11:41:53.316823 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:6001]     return current_app.ensure_sync(func)(*args, **kwargs)
+[Wed May 15 11:41:53.316834 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:6001]   File "/var/www/vapeApp/website/admin.py", line 128, in uploadfile
+[Wed May 15 11:41:53.316844 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:6001]     file.save(os.path.join(UPLOAD_FOLDER, filename))
+[Wed May 15 11:41:53.316855 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:6001]   File "/usr/local/lib/python3.7/dist-packages/werkzeug/datastructures.py", line 3002, in save
+[Wed May 15 11:41:53.316866 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:6001]     dst = open(dst, "wb")
+[Wed May 15 11:41:53.316876 2024] [wsgi:error] [pid 7234:tid 140691676321536] [remote 37.201.160.212:6001] FileNotFoundError: [Errno 2] No such file or directory: 'uploads/1_blueberry_strawberry_elfbarus.png'
+[Wed May 15 12:53:52.103744 2024] [wsgi:error] [pid 7234:tid 140691651143424] [remote 37.201.160.212:7091] ImmutableMultiDict([])
+[Wed May 15 14:26:30.923224 2024] [wsgi:error] [pid 7234:tid 140691651143424] [remote 192.168.178.78:58279] [2024-05-15 14:26:30,922] ERROR in app: Exception on /uploadfile [POST]
+[Wed May 15 14:26:30.923283 2024] [wsgi:error] [pid 7234:tid 140691651143424] [remote 192.168.178.78:58279] Traceback (most recent call last):
+[Wed May 15 14:26:30.923298 2024] [wsgi:error] [pid 7234:tid 140691651143424] [remote 192.168.178.78:58279]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2529, in wsgi_app
+[Wed May 15 14:26:30.923312 2024] [wsgi:error] [pid 7234:tid 140691651143424] [remote 192.168.178.78:58279]     response = self.full_dispatch_request()
+[Wed May 15 14:26:30.923324 2024] [wsgi:error] [pid 7234:tid 140691651143424] [remote 192.168.178.78:58279]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1825, in full_dispatch_request
+[Wed May 15 14:26:30.923337 2024] [wsgi:error] [pid 7234:tid 140691651143424] [remote 192.168.178.78:58279]     rv = self.handle_user_exception(e)
+[Wed May 15 14:26:30.923368 2024] [wsgi:error] [pid 7234:tid 140691651143424] [remote 192.168.178.78:58279]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1823, in full_dispatch_request
+[Wed May 15 14:26:30.923380 2024] [wsgi:error] [pid 7234:tid 140691651143424] [remote 192.168.178.78:58279]     rv = self.dispatch_request()
+[Wed May 15 14:26:30.923391 2024] [wsgi:error] [pid 7234:tid 140691651143424] [remote 192.168.178.78:58279]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+[Wed May 15 14:26:30.923403 2024] [wsgi:error] [pid 7234:tid 140691651143424] [remote 192.168.178.78:58279]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Wed May 15 14:26:30.923414 2024] [wsgi:error] [pid 7234:tid 140691651143424] [remote 192.168.178.78:58279]   File "/usr/local/lib/python3.7/dist-packages/flask_login/utils.py", line 290, in decorated_view
+[Wed May 15 14:26:30.923425 2024] [wsgi:error] [pid 7234:tid 140691651143424] [remote 192.168.178.78:58279]     return current_app.ensure_sync(func)(*args, **kwargs)
+[Wed May 15 14:26:30.923436 2024] [wsgi:error] [pid 7234:tid 140691651143424] [remote 192.168.178.78:58279]   File "/var/www/vapeApp/website/admin.py", line 128, in uploadfile
+[Wed May 15 14:26:30.923447 2024] [wsgi:error] [pid 7234:tid 140691651143424] [remote 192.168.178.78:58279]     file.save(os.path.join(UPLOAD_FOLDER, filename))
+[Wed May 15 14:26:30.923458 2024] [wsgi:error] [pid 7234:tid 140691651143424] [remote 192.168.178.78:58279]   File "/usr/local/lib/python3.7/dist-packages/werkzeug/datastructures.py", line 3002, in save
+[Wed May 15 14:26:30.923469 2024] [wsgi:error] [pid 7234:tid 140691651143424] [remote 192.168.178.78:58279]     dst = open(dst, "wb")
+[Wed May 15 14:26:30.923480 2024] [wsgi:error] [pid 7234:tid 140691651143424] [remote 192.168.178.78:58279] FileNotFoundError: [Errno 2] No such file or directory: 'uploads/5_mad_barries_elfbarus.gif'
+[Wed May 15 14:32:29.491635 2024] [wsgi:error] [pid 11276:tid 140691676321536] Database created!
+[Wed May 15 14:32:48.369777 2024] [wsgi:error] [pid 11358:tid 140691676321536] Database created!
+[Wed May 15 14:33:10.277720 2024] [wsgi:error] [pid 11358:tid 140691676321536] [remote 192.168.178.78:58401] Die Vape Mad Barries Elfbarus 1000k Z\xc3\xbcge 8\xe2\x82\xac 5 5_mad_barries_elfbarus.gif wurde hinzugef\xc3\xbcgt!
+[Wed May 15 14:36:43.468583 2024] [wsgi:error] [pid 11358:tid 140691651143424] [remote 37.201.160.212:65524] Die Vape Spezi Elfbarus 1 Z\xc3\xbcge 100\xe2\x82\xac 1 1_spezi_elfbarus.jpg wurde hinzugef\xc3\xbcgt!
+[Wed May 15 14:52:35.125957 2024] [wsgi:error] [pid 11358:tid 140691651143424] [remote 37.201.160.212:55783] Die Vape Robert Elfbarus -1 Z\xc3\xbcge 10\xe2\x82\xac 1 1_robert_elfbarus.jpeg wurde hinzugef\xc3\xbcgt!
+[Wed May 15 15:12:22.580681 2024] [wsgi:error] [pid 11358:tid 140691676321536] [remote 37.201.160.212:8517] [2024-05-15 15:12:22,577] ERROR in app: Exception on /login [POST]
+[Wed May 15 15:12:22.580731 2024] [wsgi:error] [pid 11358:tid 140691676321536] [remote 37.201.160.212:8517] Traceback (most recent call last):
+[Wed May 15 15:12:22.580745 2024] [wsgi:error] [pid 11358:tid 140691676321536] [remote 37.201.160.212:8517]   File "/usr/lib/python3.7/hashlib.py", line 150, in __hash_new
+[Wed May 15 15:12:22.580758 2024] [wsgi:error] [pid 11358:tid 140691676321536] [remote 37.201.160.212:8517]     return _hashlib.new(name, data)
+[Wed May 15 15:12:22.580770 2024] [wsgi:error] [pid 11358:tid 140691676321536] [remote 37.201.160.212:8517] ValueError: unsupported hash type
+[Wed May 15 15:12:22.580782 2024] [wsgi:error] [pid 11358:tid 140691676321536] [remote 37.201.160.212:8517] 
+[Wed May 15 15:12:22.580794 2024] [wsgi:error] [pid 11358:tid 140691676321536] [remote 37.201.160.212:8517] During handling of the above exception, another exception occurred:
+[Wed May 15 15:12:22.580806 2024] [wsgi:error] [pid 11358:tid 140691676321536] [remote 37.201.160.212:8517] 
+[Wed May 15 15:12:22.580817 2024] [wsgi:error] [pid 11358:tid 140691676321536] [remote 37.201.160.212:8517] Traceback (most recent call last):
+[Wed May 15 15:12:22.580845 2024] [wsgi:error] [pid 11358:tid 140691676321536] [remote 37.201.160.212:8517]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2529, in wsgi_app
+[Wed May 15 15:12:22.580857 2024] [wsgi:error] [pid 11358:tid 140691676321536] [remote 37.201.160.212:8517]     response = self.full_dispatch_request()
+[Wed May 15 15:12:22.580868 2024] [wsgi:error] [pid 11358:tid 140691676321536] [remote 37.201.160.212:8517]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1825, in full_dispatch_request
+[Wed May 15 15:12:22.580879 2024] [wsgi:error] [pid 11358:tid 140691676321536] [remote 37.201.160.212:8517]     rv = self.handle_user_exception(e)
+[Wed May 15 15:12:22.580890 2024] [wsgi:error] [pid 11358:tid 140691676321536] [remote 37.201.160.212:8517]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1823, in full_dispatch_request
+[Wed May 15 15:12:22.580901 2024] [wsgi:error] [pid 11358:tid 140691676321536] [remote 37.201.160.212:8517]     rv = self.dispatch_request()
+[Wed May 15 15:12:22.580912 2024] [wsgi:error] [pid 11358:tid 140691676321536] [remote 37.201.160.212:8517]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+[Wed May 15 15:12:22.580923 2024] [wsgi:error] [pid 11358:tid 140691676321536] [remote 37.201.160.212:8517]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Wed May 15 15:12:22.580934 2024] [wsgi:error] [pid 11358:tid 140691676321536] [remote 37.201.160.212:8517]   File "/var/www/vapeApp/website/auth.py", line 38, in login
+[Wed May 15 15:12:22.580945 2024] [wsgi:error] [pid 11358:tid 140691676321536] [remote 37.201.160.212:8517]     if check_password_hash(user.password, password):
+[Wed May 15 15:12:22.580955 2024] [wsgi:error] [pid 11358:tid 140691676321536] [remote 37.201.160.212:8517]   File "/usr/local/lib/python3.7/dist-packages/werkzeug/security.py", line 107, in check_password_hash
+[Wed May 15 15:12:22.580967 2024] [wsgi:error] [pid 11358:tid 140691676321536] [remote 37.201.160.212:8517]     return hmac.compare_digest(_hash_internal(method, salt, password)[0], hashval)
+[Wed May 15 15:12:22.580978 2024] [wsgi:error] [pid 11358:tid 140691676321536] [remote 37.201.160.212:8517]   File "/usr/local/lib/python3.7/dist-packages/werkzeug/security.py", line 55, in _hash_internal
+[Wed May 15 15:12:22.580989 2024] [wsgi:error] [pid 11358:tid 140691676321536] [remote 37.201.160.212:8517]     return hmac.new(salt, password, method).hexdigest(), method
+[Wed May 15 15:12:22.580999 2024] [wsgi:error] [pid 11358:tid 140691676321536] [remote 37.201.160.212:8517]   File "/usr/lib/python3.7/hmac.py", line 153, in new
+[Wed May 15 15:12:22.581010 2024] [wsgi:error] [pid 11358:tid 140691676321536] [remote 37.201.160.212:8517]     return HMAC(key, msg, digestmod)
+[Wed May 15 15:12:22.581020 2024] [wsgi:error] [pid 11358:tid 140691676321536] [remote 37.201.160.212:8517]   File "/usr/lib/python3.7/hmac.py", line 65, in __init__
+[Wed May 15 15:12:22.581031 2024] [wsgi:error] [pid 11358:tid 140691676321536] [remote 37.201.160.212:8517]     self.outer = self.digest_cons()
+[Wed May 15 15:12:22.581041 2024] [wsgi:error] [pid 11358:tid 140691676321536] [remote 37.201.160.212:8517]   File "/usr/lib/python3.7/hmac.py", line 61, in <lambda>
+[Wed May 15 15:12:22.581051 2024] [wsgi:error] [pid 11358:tid 140691676321536] [remote 37.201.160.212:8517]     self.digest_cons = lambda d=b'': _hashlib.new(digestmod, d)
+[Wed May 15 15:12:22.581062 2024] [wsgi:error] [pid 11358:tid 140691676321536] [remote 37.201.160.212:8517]   File "/usr/lib/python3.7/hashlib.py", line 156, in __hash_new
+[Wed May 15 15:12:22.581073 2024] [wsgi:error] [pid 11358:tid 140691676321536] [remote 37.201.160.212:8517]     return __get_builtin_constructor(name)(data)
+[Wed May 15 15:12:22.581083 2024] [wsgi:error] [pid 11358:tid 140691676321536] [remote 37.201.160.212:8517]   File "/usr/lib/python3.7/hashlib.py", line 113, in __get_builtin_constructor
+[Wed May 15 15:12:22.581094 2024] [wsgi:error] [pid 11358:tid 140691676321536] [remote 37.201.160.212:8517]     raise ValueError('unsupported hash type ' + name)
+[Wed May 15 15:12:22.581113 2024] [wsgi:error] [pid 11358:tid 140691676321536] [remote 37.201.160.212:8517] ValueError: unsupported hash type scrypt:32768:8:1
+[Wed May 15 15:12:34.174439 2024] [wsgi:error] [pid 11358:tid 140691676321536] [remote 37.201.160.212:8526] Account erstellt: finlay187 Passwort: 123 success
+[Wed May 15 15:12:45.110809 2024] [wsgi:error] [pid 11358:tid 140691651143424] [remote 37.201.160.212:8530] [2024-05-15 15:12:45,109] ERROR in app: Exception on /login [POST]
+[Wed May 15 15:12:45.110897 2024] [wsgi:error] [pid 11358:tid 140691651143424] [remote 37.201.160.212:8530] Traceback (most recent call last):
+[Wed May 15 15:12:45.110905 2024] [wsgi:error] [pid 11358:tid 140691651143424] [remote 37.201.160.212:8530]   File "/usr/lib/python3.7/hashlib.py", line 150, in __hash_new
+[Wed May 15 15:12:45.110911 2024] [wsgi:error] [pid 11358:tid 140691651143424] [remote 37.201.160.212:8530]     return _hashlib.new(name, data)
+[Wed May 15 15:12:45.110917 2024] [wsgi:error] [pid 11358:tid 140691651143424] [remote 37.201.160.212:8530] ValueError: unsupported hash type
+[Wed May 15 15:12:45.110923 2024] [wsgi:error] [pid 11358:tid 140691651143424] [remote 37.201.160.212:8530] 
+[Wed May 15 15:12:45.110929 2024] [wsgi:error] [pid 11358:tid 140691651143424] [remote 37.201.160.212:8530] During handling of the above exception, another exception occurred:
+[Wed May 15 15:12:45.110934 2024] [wsgi:error] [pid 11358:tid 140691651143424] [remote 37.201.160.212:8530] 
+[Wed May 15 15:12:45.110940 2024] [wsgi:error] [pid 11358:tid 140691651143424] [remote 37.201.160.212:8530] Traceback (most recent call last):
+[Wed May 15 15:12:45.110946 2024] [wsgi:error] [pid 11358:tid 140691651143424] [remote 37.201.160.212:8530]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2529, in wsgi_app
+[Wed May 15 15:12:45.110952 2024] [wsgi:error] [pid 11358:tid 140691651143424] [remote 37.201.160.212:8530]     response = self.full_dispatch_request()
+[Wed May 15 15:12:45.110958 2024] [wsgi:error] [pid 11358:tid 140691651143424] [remote 37.201.160.212:8530]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1825, in full_dispatch_request
+[Wed May 15 15:12:45.110964 2024] [wsgi:error] [pid 11358:tid 140691651143424] [remote 37.201.160.212:8530]     rv = self.handle_user_exception(e)
+[Wed May 15 15:12:45.110970 2024] [wsgi:error] [pid 11358:tid 140691651143424] [remote 37.201.160.212:8530]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1823, in full_dispatch_request
+[Wed May 15 15:12:45.110976 2024] [wsgi:error] [pid 11358:tid 140691651143424] [remote 37.201.160.212:8530]     rv = self.dispatch_request()
+[Wed May 15 15:12:45.110982 2024] [wsgi:error] [pid 11358:tid 140691651143424] [remote 37.201.160.212:8530]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+[Wed May 15 15:12:45.110988 2024] [wsgi:error] [pid 11358:tid 140691651143424] [remote 37.201.160.212:8530]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Wed May 15 15:12:45.110993 2024] [wsgi:error] [pid 11358:tid 140691651143424] [remote 37.201.160.212:8530]   File "/var/www/vapeApp/website/auth.py", line 38, in login
+[Wed May 15 15:12:45.110999 2024] [wsgi:error] [pid 11358:tid 140691651143424] [remote 37.201.160.212:8530]     if check_password_hash(user.password, password):
+[Wed May 15 15:12:45.111005 2024] [wsgi:error] [pid 11358:tid 140691651143424] [remote 37.201.160.212:8530]   File "/usr/local/lib/python3.7/dist-packages/werkzeug/security.py", line 107, in check_password_hash
+[Wed May 15 15:12:45.111011 2024] [wsgi:error] [pid 11358:tid 140691651143424] [remote 37.201.160.212:8530]     return hmac.compare_digest(_hash_internal(method, salt, password)[0], hashval)
+[Wed May 15 15:12:45.111017 2024] [wsgi:error] [pid 11358:tid 140691651143424] [remote 37.201.160.212:8530]   File "/usr/local/lib/python3.7/dist-packages/werkzeug/security.py", line 55, in _hash_internal
+[Wed May 15 15:12:45.111036 2024] [wsgi:error] [pid 11358:tid 140691651143424] [remote 37.201.160.212:8530]     return hmac.new(salt, password, method).hexdigest(), method
+[Wed May 15 15:12:45.111043 2024] [wsgi:error] [pid 11358:tid 140691651143424] [remote 37.201.160.212:8530]   File "/usr/lib/python3.7/hmac.py", line 153, in new
+[Wed May 15 15:12:45.111049 2024] [wsgi:error] [pid 11358:tid 140691651143424] [remote 37.201.160.212:8530]     return HMAC(key, msg, digestmod)
+[Wed May 15 15:12:45.111054 2024] [wsgi:error] [pid 11358:tid 140691651143424] [remote 37.201.160.212:8530]   File "/usr/lib/python3.7/hmac.py", line 65, in __init__
+[Wed May 15 15:12:45.111060 2024] [wsgi:error] [pid 11358:tid 140691651143424] [remote 37.201.160.212:8530]     self.outer = self.digest_cons()
+[Wed May 15 15:12:45.111065 2024] [wsgi:error] [pid 11358:tid 140691651143424] [remote 37.201.160.212:8530]   File "/usr/lib/python3.7/hmac.py", line 61, in <lambda>
+[Wed May 15 15:12:45.111071 2024] [wsgi:error] [pid 11358:tid 140691651143424] [remote 37.201.160.212:8530]     self.digest_cons = lambda d=b'': _hashlib.new(digestmod, d)
+[Wed May 15 15:12:45.111077 2024] [wsgi:error] [pid 11358:tid 140691651143424] [remote 37.201.160.212:8530]   File "/usr/lib/python3.7/hashlib.py", line 156, in __hash_new
+[Wed May 15 15:12:45.111083 2024] [wsgi:error] [pid 11358:tid 140691651143424] [remote 37.201.160.212:8530]     return __get_builtin_constructor(name)(data)
+[Wed May 15 15:12:45.111088 2024] [wsgi:error] [pid 11358:tid 140691651143424] [remote 37.201.160.212:8530]   File "/usr/lib/python3.7/hashlib.py", line 113, in __get_builtin_constructor
+[Wed May 15 15:12:45.111094 2024] [wsgi:error] [pid 11358:tid 140691651143424] [remote 37.201.160.212:8530]     raise ValueError('unsupported hash type ' + name)
+[Wed May 15 15:12:45.111100 2024] [wsgi:error] [pid 11358:tid 140691651143424] [remote 37.201.160.212:8530] ValueError: unsupported hash type scrypt:32768:8:1
+[Wed May 15 15:13:20.300769 2024] [wsgi:error] [pid 11358:tid 140691676321536] [remote 37.201.160.212:8548] Die Vape Penis_ImArsch Vozol 100k Z\xc3\xbcge 1\xe2\x82\xac 1 1_penis_imarsch_vozol.png wurde hinzugef\xc3\xbcgt!
+[Wed May 15 16:06:50.314141 2024] [wsgi:error] [pid 15846:tid 140305135621888] Database created!
+[Wed May 15 16:08:54.930350 2024] [wsgi:error] [pid 15846:tid 140305110443776] [remote 37.201.160.212:9233] ImmutableMultiDict([])
+[Wed May 15 16:10:09.051670 2024] [wsgi:error] [pid 16000:tid 140696949675776] Database created!
+[Wed May 15 16:10:25.924627 2024] [wsgi:error] [pid 16086:tid 140244127794944] Database created!
+[Wed May 15 16:10:28.219451 2024] [wsgi:error] [pid 16086:tid 140244102616832] [remote 37.201.160.212:9249] ImmutableMultiDict([])
+[Wed May 15 16:10:32.468896 2024] [wsgi:error] [pid 16086:tid 140244127794944] [remote 37.201.160.212:9249] ImmutableMultiDict([])
+[Wed May 15 16:11:48.546983 2024] [wsgi:error] [pid 16200:tid 140192789649152] Database created!
+[Wed May 15 16:12:58.642643 2024] [wsgi:error] [pid 16200:tid 140192789649152] [remote 37.201.160.212:9282] ImmutableMultiDict([])
+[Wed May 15 16:13:03.441254 2024] [wsgi:error] [pid 16200:tid 140192764471040] [remote 37.201.160.212:9282] ImmutableMultiDict([])
+[Wed May 15 16:17:42.279525 2024] [wsgi:error] [pid 16431:tid 140358082189056] Database created!
+[Wed May 15 16:21:56.086303 2024] [wsgi:error] [pid 16431:tid 140358048618240] [remote 37.201.160.212:9484] ImmutableMultiDict([])
+[Wed May 15 16:22:00.527888 2024] [wsgi:error] [pid 16431:tid 140358073796352] [remote 37.201.160.212:9484] Marke Savage wurde hinzugef\xc3\xbcgt!
+[Wed May 15 16:22:23.056836 2024] [wsgi:error] [pid 16431:tid 140358082189056] [remote 37.201.160.212:9491] Die Vape Blueberry Cranberry Cherry Savage 600 Z\xc3\xbcge 5\xe2\x82\xac 10 10_blueberry_cranberry_cherry_savage.png wurde hinzugef\xc3\xbcgt!
+[Wed May 15 16:38:42.405951 2024] [wsgi:error] [pid 16986:tid 139833398843136] Database created!
+[Wed May 15 16:39:04.623292 2024] [wsgi:error] [pid 17072:tid 140308984510208] Database created!
+[Wed May 15 16:39:45.484524 2024] [wsgi:error] [pid 17167:tid 140532316686080] Database created!
+[Wed May 15 16:40:36.212498 2024] [wsgi:error] [pid 17264:tid 140622522103552] Database created!
+[Wed May 15 16:41:16.914469 2024] [wsgi:error] [pid 17358:tid 139966666594048] Database created!
+[Wed May 15 16:41:42.032842 2024] [wsgi:error] [pid 17446:tid 140521690748672] Database created!
+[Wed May 15 16:41:48.909324 2024] [wsgi:error] [pid 17528:tid 140017312225024] Database created!
+[Wed May 15 16:43:10.060315 2024] [wsgi:error] [pid 17637:tid 140267789047552] Database created!
+[Wed May 15 16:43:57.756856 2024] [wsgi:error] [pid 17735:tid 140335629948672] Database created!
+[Wed May 15 16:45:36.010875 2024] [wsgi:error] [pid 17850:tid 140292806825728] Database created!
+[Wed May 15 16:46:00.903460 2024] [wsgi:error] [pid 17937:tid 140506850899712] Database created!
+[Wed May 15 16:47:02.065207 2024] [wsgi:error] [pid 18043:tid 139715802486528] Database created!
+[Wed May 15 17:42:28.428357 2024] [wsgi:error] [pid 18043:tid 139715777308416] [remote 37.201.160.212:10565] ImmutableMultiDict([])
+[Wed May 15 17:45:25.571266 2024] [wsgi:error] [pid 18043:tid 139715777308416] [remote 37.201.160.212:10598] ImmutableMultiDict([])
+[Wed May 15 17:45:27.771786 2024] [wsgi:error] [pid 18043:tid 139715802486528] [remote 37.201.160.212:10598] ImmutableMultiDict([])
+[Wed May 15 17:45:29.391277 2024] [wsgi:error] [pid 18043:tid 139715802486528] [remote 37.201.160.212:10597] ImmutableMultiDict([])
+[Wed May 15 17:47:20.887981 2024] [wsgi:error] [pid 19482:tid 139804910278400] Database created!
+[Wed May 15 17:48:05.863383 2024] [wsgi:error] [pid 19583:tid 140040927004416] Database created!
+[Wed May 15 17:48:39.102920 2024] [wsgi:error] [pid 19678:tid 140282073995008] Database created!
+[Wed May 15 17:49:20.739723 2024] [wsgi:error] [pid 19775:tid 140548398405376] Database created!
+[Wed May 15 17:49:59.943868 2024] [wsgi:error] [pid 19775:tid 140548398405376] [remote 37.201.160.212:10663] ImmutableMultiDict([])
+[Wed May 15 17:50:51.982978 2024] [wsgi:error] [pid 19895:tid 139693953140480] Database created!
+[Wed May 15 17:53:42.642559 2024] [wsgi:error] [pid 20031:tid 140567196620544] Database created!
+[Wed May 15 17:54:09.802538 2024] [wsgi:error] [pid 20122:tid 140086835992320] Database created!
+[Wed May 15 17:55:24.906195 2024] [wsgi:error] [pid 20233:tid 139684780005120] Database created!
+[Wed May 15 17:56:33.582868 2024] [wsgi:error] [pid 20382:tid 139630352422656] Database created!
+[Wed May 15 18:00:59.035845 2024] [wsgi:error] [pid 20533:tid 140226260686592] Database created!
+[Wed May 15 18:01:49.764709 2024] [wsgi:error] [pid 20616:tid 139901640759040] Database created!
+[Wed May 15 18:02:46.700233 2024] [wsgi:error] [pid 20700:tid 139759755712256] Database created!
+[Wed May 15 18:02:56.395503 2024] [wsgi:error] [pid 20700:tid 139759730534144] [remote 93.231.130.227:49615] ImmutableMultiDict([])
+[Wed May 15 18:02:58.685291 2024] [wsgi:error] [pid 20700:tid 139759755712256] [remote 93.231.130.227:49615] ImmutableMultiDict([])
+[Wed May 15 18:03:19.230587 2024] [wsgi:error] [pid 20700:tid 139759755712256] [remote 93.231.130.227:49618] [2024-05-15 18:03:19,228] ERROR in app: Exception on /uploadfile [POST]
+[Wed May 15 18:03:19.230625 2024] [wsgi:error] [pid 20700:tid 139759755712256] [remote 93.231.130.227:49618] Traceback (most recent call last):
+[Wed May 15 18:03:19.230638 2024] [wsgi:error] [pid 20700:tid 139759755712256] [remote 93.231.130.227:49618]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2529, in wsgi_app
+[Wed May 15 18:03:19.230651 2024] [wsgi:error] [pid 20700:tid 139759755712256] [remote 93.231.130.227:49618]     response = self.full_dispatch_request()
+[Wed May 15 18:03:19.230663 2024] [wsgi:error] [pid 20700:tid 139759755712256] [remote 93.231.130.227:49618]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1825, in full_dispatch_request
+[Wed May 15 18:03:19.230676 2024] [wsgi:error] [pid 20700:tid 139759755712256] [remote 93.231.130.227:49618]     rv = self.handle_user_exception(e)
+[Wed May 15 18:03:19.230687 2024] [wsgi:error] [pid 20700:tid 139759755712256] [remote 93.231.130.227:49618]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1823, in full_dispatch_request
+[Wed May 15 18:03:19.230710 2024] [wsgi:error] [pid 20700:tid 139759755712256] [remote 93.231.130.227:49618]     rv = self.dispatch_request()
+[Wed May 15 18:03:19.230721 2024] [wsgi:error] [pid 20700:tid 139759755712256] [remote 93.231.130.227:49618]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+[Wed May 15 18:03:19.230732 2024] [wsgi:error] [pid 20700:tid 139759755712256] [remote 93.231.130.227:49618]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Wed May 15 18:03:19.230743 2024] [wsgi:error] [pid 20700:tid 139759755712256] [remote 93.231.130.227:49618]   File "/usr/local/lib/python3.7/dist-packages/flask_login/utils.py", line 290, in decorated_view
+[Wed May 15 18:03:19.230754 2024] [wsgi:error] [pid 20700:tid 139759755712256] [remote 93.231.130.227:49618]     return current_app.ensure_sync(func)(*args, **kwargs)
+[Wed May 15 18:03:19.230764 2024] [wsgi:error] [pid 20700:tid 139759755712256] [remote 93.231.130.227:49618]   File "/var/www/vapeApp/website/admin.py", line 109, in uploadfile
+[Wed May 15 18:03:19.230775 2024] [wsgi:error] [pid 20700:tid 139759755712256] [remote 93.231.130.227:49618]     print(f"Die Vape {geschmack} {marke} {zuege} Z\xc3\xbcge {preis}\xe2\x82\xac {anzahl} {BildName} wurde hinzugef\xc3\xbcgt!")
+[Wed May 15 18:03:19.230786 2024] [wsgi:error] [pid 20700:tid 139759755712256] [remote 93.231.130.227:49618] NameError: name 'preis' is not defined
+[Wed May 15 18:04:17.313278 2024] [wsgi:error] [pid 20700:tid 139759722141440] [remote 37.201.160.212:11009] [2024-05-15 18:04:17,312] ERROR in app: Exception on /uploadfile [POST]
+[Wed May 15 18:04:17.313324 2024] [wsgi:error] [pid 20700:tid 139759722141440] [remote 37.201.160.212:11009] Traceback (most recent call last):
+[Wed May 15 18:04:17.313338 2024] [wsgi:error] [pid 20700:tid 139759722141440] [remote 37.201.160.212:11009]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2529, in wsgi_app
+[Wed May 15 18:04:17.313351 2024] [wsgi:error] [pid 20700:tid 139759722141440] [remote 37.201.160.212:11009]     response = self.full_dispatch_request()
+[Wed May 15 18:04:17.313364 2024] [wsgi:error] [pid 20700:tid 139759722141440] [remote 37.201.160.212:11009]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1825, in full_dispatch_request
+[Wed May 15 18:04:17.313376 2024] [wsgi:error] [pid 20700:tid 139759722141440] [remote 37.201.160.212:11009]     rv = self.handle_user_exception(e)
+[Wed May 15 18:04:17.313388 2024] [wsgi:error] [pid 20700:tid 139759722141440] [remote 37.201.160.212:11009]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1823, in full_dispatch_request
+[Wed May 15 18:04:17.313401 2024] [wsgi:error] [pid 20700:tid 139759722141440] [remote 37.201.160.212:11009]     rv = self.dispatch_request()
+[Wed May 15 18:04:17.313412 2024] [wsgi:error] [pid 20700:tid 139759722141440] [remote 37.201.160.212:11009]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+[Wed May 15 18:04:17.313425 2024] [wsgi:error] [pid 20700:tid 139759722141440] [remote 37.201.160.212:11009]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Wed May 15 18:04:17.313437 2024] [wsgi:error] [pid 20700:tid 139759722141440] [remote 37.201.160.212:11009]   File "/usr/local/lib/python3.7/dist-packages/flask_login/utils.py", line 290, in decorated_view
+[Wed May 15 18:04:17.313450 2024] [wsgi:error] [pid 20700:tid 139759722141440] [remote 37.201.160.212:11009]     return current_app.ensure_sync(func)(*args, **kwargs)
+[Wed May 15 18:04:17.313462 2024] [wsgi:error] [pid 20700:tid 139759722141440] [remote 37.201.160.212:11009]   File "/var/www/vapeApp/website/admin.py", line 109, in uploadfile
+[Wed May 15 18:04:17.313474 2024] [wsgi:error] [pid 20700:tid 139759722141440] [remote 37.201.160.212:11009]     print(f"Die Vape {geschmack} {marke} {zuege} Z\xc3\xbcge {preis}\xe2\x82\xac {anzahl} {BildName} wurde hinzugef\xc3\xbcgt!")
+[Wed May 15 18:04:17.313501 2024] [wsgi:error] [pid 20700:tid 139759722141440] [remote 37.201.160.212:11009] NameError: name 'preis' is not defined
+[Wed May 15 18:05:37.247791 2024] [wsgi:error] [pid 20784:tid 139634058647296] Database created!
+[Wed May 15 18:05:48.179943 2024] [wsgi:error] [pid 20784:tid 139634025076480] [remote 37.201.160.212:11023] Die Vape test Savage 60k Z\xc3\xbcge 111 111_test_savage.png wurde hinzugef\xc3\xbcgt!
+[Wed May 15 18:22:54.436241 2024] [wsgi:error] [pid 20784:tid 139634033469184] [remote 93.231.130.227:58403] Die Vape Gummipenis Vozol 1 Z\xc3\xbcge 1 1_gummipenis_vozol.mov wurde hinzugef\xc3\xbcgt!
+[Wed May 15 18:29:59.573247 2024] [wsgi:error] [pid 20784:tid 139634058647296] [remote 93.231.130.227:58409] Die Vape Gummipenis Vozol 1 Z\xc3\xbcge 1 1_gummipenis_vozol.mov wurde hinzugef\xc3\xbcgt!
+[Wed May 15 20:54:39.540206 2024] [wsgi:error] [pid 22471:tid 140676485043968] Database created!
+[Wed May 15 20:58:47.757054 2024] [wsgi:error] [pid 24826:tid 140265103742720] Database created!
+[Wed May 15 21:00:49.331455 2024] [wsgi:error] [pid 24994:tid 140651613148928] Database created!
+[Wed May 15 21:01:29.924947 2024] [wsgi:error] [pid 25073:tid 140468878169856] Database created!
+[Wed May 15 21:04:44.229415 2024] [wsgi:error] [pid 25157:tid 140353835915008] Database created!
+[Wed May 15 21:05:47.988037 2024] [wsgi:error] [pid 25310:tid 139827019011840] Database created!
+[Wed May 15 21:07:27.590943 2024] [wsgi:error] [pid 25394:tid 140040840500992] Database created!
+[Wed May 15 21:23:06.051735 2024] [wsgi:error] [pid 585:tid 139652821600000] Database created!
+[Wed May 15 21:24:57.480441 2024] [wsgi:error] [pid 797:tid 140545031915264] Database created!
+[Wed May 15 21:29:17.292170 2024] [wsgi:error] [pid 914:tid 140097608238848] Database created!
+[Wed May 15 21:30:30.442175 2024] [wsgi:error] [pid 1004:tid 140490097411840] Database created!
+[Wed May 15 21:30:50.770607 2024] [wsgi:error] [pid 1084:tid 139970976696064] Database created!
+[Wed May 15 21:31:16.861922 2024] [wsgi:error] [pid 1164:tid 140284558427904] Database created!
+[Wed May 15 21:32:29.101096 2024] [wsgi:error] [pid 1247:tid 140317873129216] Database created!
+[Wed May 15 21:32:33.528081 2024] [wsgi:error] [pid 1247:tid 140317873129216] [remote 37.201.160.212:14646] ImmutableMultiDict([])
+[Wed May 15 21:33:05.179105 2024] [wsgi:error] [pid 1333:tid 140233367865088] Database created!
+[Wed May 15 21:33:10.044346 2024] [wsgi:error] [pid 1333:tid 140233334294272] [remote 37.201.160.212:14661] ImmutableMultiDict([])
+[Wed May 15 21:33:32.954925 2024] [wsgi:error] [pid 1437:tid 140375776020224] Database created!
+[Wed May 15 21:33:32.964918 2024] [wsgi:error] [pid 1437:tid 140375776020224] [remote 37.201.160.212:14666] ImmutableMultiDict([])
+[Wed May 15 21:33:35.754375 2024] [wsgi:error] [pid 1437:tid 140375742449408] [remote 37.201.160.212:14667] ImmutableMultiDict([])
+[Wed May 15 21:33:40.166574 2024] [wsgi:error] [pid 1437:tid 140375742449408] [remote 37.201.160.212:14667] ImmutableMultiDict([])
+[Wed May 15 21:33:43.730858 2024] [wsgi:error] [pid 1437:tid 140375742449408] [remote 37.201.160.212:14667] ImmutableMultiDict([])
+[Wed May 15 21:33:46.929266 2024] [wsgi:error] [pid 1437:tid 140375759234816] [remote 37.201.160.212:14695] ImmutableMultiDict([])
+[Wed May 15 21:33:49.822661 2024] [wsgi:error] [pid 1437:tid 140375759234816] [remote 37.201.160.212:14695] ImmutableMultiDict([])
+[Wed May 15 21:36:45.641946 2024] [wsgi:error] [pid 1518:tid 139842405021440] Database created!
+[Wed May 15 21:38:27.812025 2024] [wsgi:error] [pid 1599:tid 140211968853760] Database created!
+[Wed May 15 21:39:53.381085 2024] [wsgi:error] [pid 1685:tid 139974466258688] Database created!
+[Wed May 15 21:42:12.116779 2024] [wsgi:error] [pid 1766:tid 140018921162496] Database created!
+[Wed May 15 21:43:11.054334 2024] [wsgi:error] [pid 1847:tid 140547024078592] Database created!
+[Wed May 15 21:43:36.427529 2024] [wsgi:error] [pid 1926:tid 140306315265792] Database created!
+[Wed May 15 21:43:55.831814 2024] [wsgi:error] [pid 2005:tid 140031223744256] Database created!
+[Wed May 15 21:44:51.779300 2024] [wsgi:error] [pid 2111:tid 139956665796352] Database created!
+[Wed May 15 21:46:20.375938 2024] [wsgi:error] [pid 2192:tid 139847062669056] Database created!
+[Wed May 15 21:49:25.080057 2024] [wsgi:error] [pid 2192:tid 139847062669056] [remote 37.201.160.212:14879] ImmutableMultiDict([])
+[Wed May 15 21:49:27.023735 2024] [wsgi:error] [pid 2192:tid 139847062669056] [remote 37.201.160.212:14879] ImmutableMultiDict([])
+[Wed May 15 21:49:27.657468 2024] [wsgi:error] [pid 2192:tid 139847029098240] [remote 37.201.160.212:14879] ImmutableMultiDict([])
+[Wed May 15 21:49:35.152483 2024] [wsgi:error] [pid 2192:tid 139847062669056] [remote 37.201.160.212:14883] ImmutableMultiDict([])
+[Wed May 15 21:54:28.830882 2024] [wsgi:error] [pid 2281:tid 139757760268032] Database created!
+[Wed May 15 21:54:38.731789 2024] [wsgi:error] [pid 2281:tid 139757735089920] [remote 37.201.160.212:14941] ImmutableMultiDict([])
+[Wed May 15 21:55:22.144718 2024] [wsgi:error] [pid 2362:tid 139717932992256] Database created!
+[Wed May 15 21:55:32.225936 2024] [wsgi:error] [pid 2362:tid 139717932992256] [remote 37.201.160.212:14958] ImmutableMultiDict([])
+[Wed May 15 21:55:45.589013 2024] [wsgi:error] [pid 2441:tid 139682536109824] Database created!
+[Wed May 15 21:55:47.453401 2024] [wsgi:error] [pid 2441:tid 139682536109824] [remote 37.201.160.212:14965] ImmutableMultiDict([])
+[Wed May 15 21:56:57.307889 2024] [wsgi:error] [pid 2520:tid 139659175511808] Database created!
+[Wed May 15 21:57:24.481172 2024] [wsgi:error] [pid 2600:tid 140426398680832] Database created!
+[Wed May 15 21:57:48.649570 2024] [wsgi:error] [pid 2679:tid 140451773757184] Database created!
+[Wed May 15 21:57:55.589771 2024] [wsgi:error] [pid 2679:tid 140451748579072] [remote 37.201.160.212:14999] ImmutableMultiDict([])
+[Wed May 15 21:59:09.681915 2024] [wsgi:error] [pid 2763:tid 140313614960384] Database created!
+[Wed May 15 21:59:42.585627 2024] [wsgi:error] [pid 2763:tid 140313581389568] [remote 93.231.130.227:61555] ImmutableMultiDict([])
+[Fri May 17 13:38:25.111432 2024] [wsgi:error] [pid 620:tid 139708921825024] Database created!
+[Fri May 17 13:43:01.898213 2024] [wsgi:error] [pid 620:tid 139708896646912] [remote 37.201.160.212:2518] ImmutableMultiDict([])
+[Fri May 17 13:43:19.883757 2024] [wsgi:error] [pid 620:tid 139708913432320] [remote 37.201.160.212:2524] ImmutableMultiDict([])
+[Fri May 17 13:43:54.781948 2024] [wsgi:error] [pid 1046:tid 140587650701056] Database created!
+[Fri May 17 13:43:54.792015 2024] [wsgi:error] [pid 1046:tid 140587650701056] [remote 37.201.160.212:2531] ImmutableMultiDict([])
+[Fri May 17 13:44:16.257841 2024] [wsgi:error] [pid 1128:tid 140250856281856] Database created!
+[Fri May 17 13:44:20.865665 2024] [wsgi:error] [pid 1128:tid 140250822711040] [remote 37.201.160.212:2538] ImmutableMultiDict([])
+[Fri May 17 18:40:46.970787 2024] [wsgi:error] [pid 1128:tid 140250822711040] [remote 109.43.240.225:2269] [2024-05-17 18:40:46,943] ERROR in app: Exception on /delete_vape [GET]
+[Fri May 17 18:40:46.970823 2024] [wsgi:error] [pid 1128:tid 140250822711040] [remote 109.43.240.225:2269] Traceback (most recent call last):
+[Fri May 17 18:40:46.970835 2024] [wsgi:error] [pid 1128:tid 140250822711040] [remote 109.43.240.225:2269]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2529, in wsgi_app
+[Fri May 17 18:40:46.970846 2024] [wsgi:error] [pid 1128:tid 140250822711040] [remote 109.43.240.225:2269]     response = self.full_dispatch_request()
+[Fri May 17 18:40:46.970856 2024] [wsgi:error] [pid 1128:tid 140250822711040] [remote 109.43.240.225:2269]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1825, in full_dispatch_request
+[Fri May 17 18:40:46.970866 2024] [wsgi:error] [pid 1128:tid 140250822711040] [remote 109.43.240.225:2269]     rv = self.handle_user_exception(e)
+[Fri May 17 18:40:46.970875 2024] [wsgi:error] [pid 1128:tid 140250822711040] [remote 109.43.240.225:2269]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1823, in full_dispatch_request
+[Fri May 17 18:40:46.970906 2024] [wsgi:error] [pid 1128:tid 140250822711040] [remote 109.43.240.225:2269]     rv = self.dispatch_request()
+[Fri May 17 18:40:46.970916 2024] [wsgi:error] [pid 1128:tid 140250822711040] [remote 109.43.240.225:2269]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+[Fri May 17 18:40:46.970925 2024] [wsgi:error] [pid 1128:tid 140250822711040] [remote 109.43.240.225:2269]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Fri May 17 18:40:46.970934 2024] [wsgi:error] [pid 1128:tid 140250822711040] [remote 109.43.240.225:2269]   File "/usr/local/lib/python3.7/dist-packages/flask_login/utils.py", line 290, in decorated_view
+[Fri May 17 18:40:46.970943 2024] [wsgi:error] [pid 1128:tid 140250822711040] [remote 109.43.240.225:2269]     return current_app.ensure_sync(func)(*args, **kwargs)
+[Fri May 17 18:40:46.970952 2024] [wsgi:error] [pid 1128:tid 140250822711040] [remote 109.43.240.225:2269]   File "/var/www/vapeApp/website/admin.py", line 114, in delete_vape
+[Fri May 17 18:40:46.970961 2024] [wsgi:error] [pid 1128:tid 140250822711040] [remote 109.43.240.225:2269]     return render_template('remove_vape.html',user=current_user,vapes=vapes)
+[Fri May 17 18:40:46.970969 2024] [wsgi:error] [pid 1128:tid 140250822711040] [remote 109.43.240.225:2269]   File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 147, in render_template
+[Fri May 17 18:40:46.970979 2024] [wsgi:error] [pid 1128:tid 140250822711040] [remote 109.43.240.225:2269]     return _render(app, template, context)
+[Fri May 17 18:40:46.970987 2024] [wsgi:error] [pid 1128:tid 140250822711040] [remote 109.43.240.225:2269]   File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 130, in _render
+[Fri May 17 18:40:46.970996 2024] [wsgi:error] [pid 1128:tid 140250822711040] [remote 109.43.240.225:2269]     rv = template.render(context)
+[Fri May 17 18:40:46.971004 2024] [wsgi:error] [pid 1128:tid 140250822711040] [remote 109.43.240.225:2269]   File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 1304, in render
+[Fri May 17 18:40:46.971013 2024] [wsgi:error] [pid 1128:tid 140250822711040] [remote 109.43.240.225:2269]     self.environment.handle_exception()
+[Fri May 17 18:40:46.971022 2024] [wsgi:error] [pid 1128:tid 140250822711040] [remote 109.43.240.225:2269]   File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 939, in handle_exception
+[Fri May 17 18:40:46.971031 2024] [wsgi:error] [pid 1128:tid 140250822711040] [remote 109.43.240.225:2269]     raise rewrite_traceback_stack(source=source)
+[Fri May 17 18:40:46.971039 2024] [wsgi:error] [pid 1128:tid 140250822711040] [remote 109.43.240.225:2269]   File "/var/www/vapeApp/website/templates/remove_vape.html", line 1, in top-level template code
+[Fri May 17 18:40:46.971048 2024] [wsgi:error] [pid 1128:tid 140250822711040] [remote 109.43.240.225:2269]     {% extends "base.html" %}
+[Fri May 17 18:40:46.971057 2024] [wsgi:error] [pid 1128:tid 140250822711040] [remote 109.43.240.225:2269]   File "/var/www/vapeApp/website/templates/base.html", line 51, in top-level template code
+[Fri May 17 18:40:46.971066 2024] [wsgi:error] [pid 1128:tid 140250822711040] [remote 109.43.240.225:2269]     {% block content %}
+[Fri May 17 18:40:46.971074 2024] [wsgi:error] [pid 1128:tid 140250822711040] [remote 109.43.240.225:2269]   File "/var/www/vapeApp/website/templates/remove_vape.html", line 9, in block 'content'
+[Fri May 17 18:40:46.971083 2024] [wsgi:error] [pid 1128:tid 140250822711040] [remote 109.43.240.225:2269]     {% block vapelist %}
+[Fri May 17 18:40:46.971091 2024] [wsgi:error] [pid 1128:tid 140250822711040] [remote 109.43.240.225:2269]   File "/var/www/vapeApp/website/templates/remove_vape.html", line 12, in block 'vapelist'
+[Fri May 17 18:40:46.971100 2024] [wsgi:error] [pid 1128:tid 140250822711040] [remote 109.43.240.225:2269]     <form action="{{ url_for('rm_vape/'+vape.id) }}" method="post">
+[Fri May 17 18:40:46.971117 2024] [wsgi:error] [pid 1128:tid 140250822711040] [remote 109.43.240.225:2269] TypeError: can only concatenate str (not "int") to str
+[Fri May 17 18:40:50.247628 2024] [wsgi:error] [pid 1128:tid 140250831103744] [remote 109.43.240.225:15764] ImmutableMultiDict([])
+[Fri May 17 18:40:51.338302 2024] [wsgi:error] [pid 1128:tid 140250856281856] [remote 109.43.240.225:3399] [2024-05-17 18:40:51,337] ERROR in app: Exception on /delete_vape [GET]
+[Fri May 17 18:40:51.338355 2024] [wsgi:error] [pid 1128:tid 140250856281856] [remote 109.43.240.225:3399] Traceback (most recent call last):
+[Fri May 17 18:40:51.338375 2024] [wsgi:error] [pid 1128:tid 140250856281856] [remote 109.43.240.225:3399]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2529, in wsgi_app
+[Fri May 17 18:40:51.338388 2024] [wsgi:error] [pid 1128:tid 140250856281856] [remote 109.43.240.225:3399]     response = self.full_dispatch_request()
+[Fri May 17 18:40:51.338399 2024] [wsgi:error] [pid 1128:tid 140250856281856] [remote 109.43.240.225:3399]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1825, in full_dispatch_request
+[Fri May 17 18:40:51.338411 2024] [wsgi:error] [pid 1128:tid 140250856281856] [remote 109.43.240.225:3399]     rv = self.handle_user_exception(e)
+[Fri May 17 18:40:51.338423 2024] [wsgi:error] [pid 1128:tid 140250856281856] [remote 109.43.240.225:3399]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1823, in full_dispatch_request
+[Fri May 17 18:40:51.338433 2024] [wsgi:error] [pid 1128:tid 140250856281856] [remote 109.43.240.225:3399]     rv = self.dispatch_request()
+[Fri May 17 18:40:51.338444 2024] [wsgi:error] [pid 1128:tid 140250856281856] [remote 109.43.240.225:3399]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+[Fri May 17 18:40:51.338455 2024] [wsgi:error] [pid 1128:tid 140250856281856] [remote 109.43.240.225:3399]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Fri May 17 18:40:51.338466 2024] [wsgi:error] [pid 1128:tid 140250856281856] [remote 109.43.240.225:3399]   File "/usr/local/lib/python3.7/dist-packages/flask_login/utils.py", line 290, in decorated_view
+[Fri May 17 18:40:51.338478 2024] [wsgi:error] [pid 1128:tid 140250856281856] [remote 109.43.240.225:3399]     return current_app.ensure_sync(func)(*args, **kwargs)
+[Fri May 17 18:40:51.338490 2024] [wsgi:error] [pid 1128:tid 140250856281856] [remote 109.43.240.225:3399]   File "/var/www/vapeApp/website/admin.py", line 114, in delete_vape
+[Fri May 17 18:40:51.338500 2024] [wsgi:error] [pid 1128:tid 140250856281856] [remote 109.43.240.225:3399]     return render_template('remove_vape.html',user=current_user,vapes=vapes)
+[Fri May 17 18:40:51.338509 2024] [wsgi:error] [pid 1128:tid 140250856281856] [remote 109.43.240.225:3399]   File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 147, in render_template
+[Fri May 17 18:40:51.338518 2024] [wsgi:error] [pid 1128:tid 140250856281856] [remote 109.43.240.225:3399]     return _render(app, template, context)
+[Fri May 17 18:40:51.338527 2024] [wsgi:error] [pid 1128:tid 140250856281856] [remote 109.43.240.225:3399]   File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 130, in _render
+[Fri May 17 18:40:51.338536 2024] [wsgi:error] [pid 1128:tid 140250856281856] [remote 109.43.240.225:3399]     rv = template.render(context)
+[Fri May 17 18:40:51.338544 2024] [wsgi:error] [pid 1128:tid 140250856281856] [remote 109.43.240.225:3399]   File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 1304, in render
+[Fri May 17 18:40:51.338554 2024] [wsgi:error] [pid 1128:tid 140250856281856] [remote 109.43.240.225:3399]     self.environment.handle_exception()
+[Fri May 17 18:40:51.338562 2024] [wsgi:error] [pid 1128:tid 140250856281856] [remote 109.43.240.225:3399]   File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 939, in handle_exception
+[Fri May 17 18:40:51.338571 2024] [wsgi:error] [pid 1128:tid 140250856281856] [remote 109.43.240.225:3399]     raise rewrite_traceback_stack(source=source)
+[Fri May 17 18:40:51.338593 2024] [wsgi:error] [pid 1128:tid 140250856281856] [remote 109.43.240.225:3399]   File "/var/www/vapeApp/website/templates/remove_vape.html", line 1, in top-level template code
+[Fri May 17 18:40:51.338603 2024] [wsgi:error] [pid 1128:tid 140250856281856] [remote 109.43.240.225:3399]     {% extends "base.html" %}
+[Fri May 17 18:40:51.338612 2024] [wsgi:error] [pid 1128:tid 140250856281856] [remote 109.43.240.225:3399]   File "/var/www/vapeApp/website/templates/base.html", line 51, in top-level template code
+[Fri May 17 18:40:51.338621 2024] [wsgi:error] [pid 1128:tid 140250856281856] [remote 109.43.240.225:3399]     {% block content %}
+[Fri May 17 18:40:51.338629 2024] [wsgi:error] [pid 1128:tid 140250856281856] [remote 109.43.240.225:3399]   File "/var/www/vapeApp/website/templates/remove_vape.html", line 9, in block 'content'
+[Fri May 17 18:40:51.338638 2024] [wsgi:error] [pid 1128:tid 140250856281856] [remote 109.43.240.225:3399]     {% block vapelist %}
+[Fri May 17 18:40:51.338646 2024] [wsgi:error] [pid 1128:tid 140250856281856] [remote 109.43.240.225:3399]   File "/var/www/vapeApp/website/templates/remove_vape.html", line 12, in block 'vapelist'
+[Fri May 17 18:40:51.338655 2024] [wsgi:error] [pid 1128:tid 140250856281856] [remote 109.43.240.225:3399]     <form action="{{ url_for('rm_vape/'+vape.id) }}" method="post">
+[Fri May 17 18:40:51.338664 2024] [wsgi:error] [pid 1128:tid 140250856281856] [remote 109.43.240.225:3399] TypeError: can only concatenate str (not "int") to str
+[Sat May 18 00:07:03.099782 2024] [wsgi:error] [pid 2206:tid 140250856281856] Database created!
+[Sat May 18 10:51:08.677973 2024] [wsgi:error] [pid 2206:tid 140250822711040] [remote 37.201.160.212:2061] [2024-05-18 10:51:08,676] ERROR in app: Exception on /delete_vape [GET]
+[Sat May 18 10:51:08.678001 2024] [wsgi:error] [pid 2206:tid 140250822711040] [remote 37.201.160.212:2061] Traceback (most recent call last):
+[Sat May 18 10:51:08.678006 2024] [wsgi:error] [pid 2206:tid 140250822711040] [remote 37.201.160.212:2061]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2529, in wsgi_app
+[Sat May 18 10:51:08.678011 2024] [wsgi:error] [pid 2206:tid 140250822711040] [remote 37.201.160.212:2061]     response = self.full_dispatch_request()
+[Sat May 18 10:51:08.678016 2024] [wsgi:error] [pid 2206:tid 140250822711040] [remote 37.201.160.212:2061]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1825, in full_dispatch_request
+[Sat May 18 10:51:08.678021 2024] [wsgi:error] [pid 2206:tid 140250822711040] [remote 37.201.160.212:2061]     rv = self.handle_user_exception(e)
+[Sat May 18 10:51:08.678026 2024] [wsgi:error] [pid 2206:tid 140250822711040] [remote 37.201.160.212:2061]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1823, in full_dispatch_request
+[Sat May 18 10:51:08.678030 2024] [wsgi:error] [pid 2206:tid 140250822711040] [remote 37.201.160.212:2061]     rv = self.dispatch_request()
+[Sat May 18 10:51:08.678035 2024] [wsgi:error] [pid 2206:tid 140250822711040] [remote 37.201.160.212:2061]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+[Sat May 18 10:51:08.678040 2024] [wsgi:error] [pid 2206:tid 140250822711040] [remote 37.201.160.212:2061]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Sat May 18 10:51:08.678045 2024] [wsgi:error] [pid 2206:tid 140250822711040] [remote 37.201.160.212:2061]   File "/usr/local/lib/python3.7/dist-packages/flask_login/utils.py", line 290, in decorated_view
+[Sat May 18 10:51:08.678049 2024] [wsgi:error] [pid 2206:tid 140250822711040] [remote 37.201.160.212:2061]     return current_app.ensure_sync(func)(*args, **kwargs)
+[Sat May 18 10:51:08.678054 2024] [wsgi:error] [pid 2206:tid 140250822711040] [remote 37.201.160.212:2061]   File "/var/www/vapeApp/website/admin.py", line 114, in delete_vape
+[Sat May 18 10:51:08.678059 2024] [wsgi:error] [pid 2206:tid 140250822711040] [remote 37.201.160.212:2061]     return render_template('remove_vape.html',user=current_user,vapes=vapes)
+[Sat May 18 10:51:08.678073 2024] [wsgi:error] [pid 2206:tid 140250822711040] [remote 37.201.160.212:2061]   File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 147, in render_template
+[Sat May 18 10:51:08.678077 2024] [wsgi:error] [pid 2206:tid 140250822711040] [remote 37.201.160.212:2061]     return _render(app, template, context)
+[Sat May 18 10:51:08.678081 2024] [wsgi:error] [pid 2206:tid 140250822711040] [remote 37.201.160.212:2061]   File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 130, in _render
+[Sat May 18 10:51:08.678086 2024] [wsgi:error] [pid 2206:tid 140250822711040] [remote 37.201.160.212:2061]     rv = template.render(context)
+[Sat May 18 10:51:08.678090 2024] [wsgi:error] [pid 2206:tid 140250822711040] [remote 37.201.160.212:2061]   File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 1304, in render
+[Sat May 18 10:51:08.678094 2024] [wsgi:error] [pid 2206:tid 140250822711040] [remote 37.201.160.212:2061]     self.environment.handle_exception()
+[Sat May 18 10:51:08.678098 2024] [wsgi:error] [pid 2206:tid 140250822711040] [remote 37.201.160.212:2061]   File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 939, in handle_exception
+[Sat May 18 10:51:08.678102 2024] [wsgi:error] [pid 2206:tid 140250822711040] [remote 37.201.160.212:2061]     raise rewrite_traceback_stack(source=source)
+[Sat May 18 10:51:08.678106 2024] [wsgi:error] [pid 2206:tid 140250822711040] [remote 37.201.160.212:2061]   File "/var/www/vapeApp/website/templates/remove_vape.html", line 1, in top-level template code
+[Sat May 18 10:51:08.678111 2024] [wsgi:error] [pid 2206:tid 140250822711040] [remote 37.201.160.212:2061]     {% extends "base.html" %}
+[Sat May 18 10:51:08.678115 2024] [wsgi:error] [pid 2206:tid 140250822711040] [remote 37.201.160.212:2061]   File "/var/www/vapeApp/website/templates/base.html", line 51, in top-level template code
+[Sat May 18 10:51:08.678119 2024] [wsgi:error] [pid 2206:tid 140250822711040] [remote 37.201.160.212:2061]     {% block content %}
+[Sat May 18 10:51:08.678123 2024] [wsgi:error] [pid 2206:tid 140250822711040] [remote 37.201.160.212:2061]   File "/var/www/vapeApp/website/templates/remove_vape.html", line 9, in block 'content'
+[Sat May 18 10:51:08.678127 2024] [wsgi:error] [pid 2206:tid 140250822711040] [remote 37.201.160.212:2061]     {% block vapelist %}
+[Sat May 18 10:51:08.678131 2024] [wsgi:error] [pid 2206:tid 140250822711040] [remote 37.201.160.212:2061]   File "/var/www/vapeApp/website/templates/remove_vape.html", line 12, in block 'vapelist'
+[Sat May 18 10:51:08.678135 2024] [wsgi:error] [pid 2206:tid 140250822711040] [remote 37.201.160.212:2061]     <form action="{{ url_for('rm_vape/'+vape.id) }}" method="post">
+[Sat May 18 10:51:08.678139 2024] [wsgi:error] [pid 2206:tid 140250822711040] [remote 37.201.160.212:2061] TypeError: can only concatenate str (not "int") to str
+[Sat May 18 10:52:25.308798 2024] [wsgi:error] [pid 7739:tid 140127382984448] Database created!
+[Sat May 18 10:52:25.413148 2024] [wsgi:error] [pid 7739:tid 140127382984448] [remote 37.201.160.212:2174] [2024-05-18 10:52:25,343] ERROR in app: Exception on /delete_vape [GET]
+[Sat May 18 10:52:25.413231 2024] [wsgi:error] [pid 7739:tid 140127382984448] [remote 37.201.160.212:2174] Traceback (most recent call last):
+[Sat May 18 10:52:25.413246 2024] [wsgi:error] [pid 7739:tid 140127382984448] [remote 37.201.160.212:2174]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2529, in wsgi_app
+[Sat May 18 10:52:25.413260 2024] [wsgi:error] [pid 7739:tid 140127382984448] [remote 37.201.160.212:2174]     response = self.full_dispatch_request()
+[Sat May 18 10:52:25.413273 2024] [wsgi:error] [pid 7739:tid 140127382984448] [remote 37.201.160.212:2174]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1825, in full_dispatch_request
+[Sat May 18 10:52:25.413286 2024] [wsgi:error] [pid 7739:tid 140127382984448] [remote 37.201.160.212:2174]     rv = self.handle_user_exception(e)
+[Sat May 18 10:52:25.413348 2024] [wsgi:error] [pid 7739:tid 140127382984448] [remote 37.201.160.212:2174]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1823, in full_dispatch_request
+[Sat May 18 10:52:25.413360 2024] [wsgi:error] [pid 7739:tid 140127382984448] [remote 37.201.160.212:2174]     rv = self.dispatch_request()
+[Sat May 18 10:52:25.413371 2024] [wsgi:error] [pid 7739:tid 140127382984448] [remote 37.201.160.212:2174]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+[Sat May 18 10:52:25.413383 2024] [wsgi:error] [pid 7739:tid 140127382984448] [remote 37.201.160.212:2174]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Sat May 18 10:52:25.413394 2024] [wsgi:error] [pid 7739:tid 140127382984448] [remote 37.201.160.212:2174]   File "/usr/local/lib/python3.7/dist-packages/flask_login/utils.py", line 290, in decorated_view
+[Sat May 18 10:52:25.413406 2024] [wsgi:error] [pid 7739:tid 140127382984448] [remote 37.201.160.212:2174]     return current_app.ensure_sync(func)(*args, **kwargs)
+[Sat May 18 10:52:25.413417 2024] [wsgi:error] [pid 7739:tid 140127382984448] [remote 37.201.160.212:2174]   File "/var/www/vapeApp/website/admin.py", line 114, in delete_vape
+[Sat May 18 10:52:25.413428 2024] [wsgi:error] [pid 7739:tid 140127382984448] [remote 37.201.160.212:2174]     return render_template('remove_vape.html',user=current_user,vapes=vapes)
+[Sat May 18 10:52:25.413439 2024] [wsgi:error] [pid 7739:tid 140127382984448] [remote 37.201.160.212:2174]   File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 147, in render_template
+[Sat May 18 10:52:25.413450 2024] [wsgi:error] [pid 7739:tid 140127382984448] [remote 37.201.160.212:2174]     return _render(app, template, context)
+[Sat May 18 10:52:25.413461 2024] [wsgi:error] [pid 7739:tid 140127382984448] [remote 37.201.160.212:2174]   File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 130, in _render
+[Sat May 18 10:52:25.413473 2024] [wsgi:error] [pid 7739:tid 140127382984448] [remote 37.201.160.212:2174]     rv = template.render(context)
+[Sat May 18 10:52:25.413484 2024] [wsgi:error] [pid 7739:tid 140127382984448] [remote 37.201.160.212:2174]   File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 1304, in render
+[Sat May 18 10:52:25.413495 2024] [wsgi:error] [pid 7739:tid 140127382984448] [remote 37.201.160.212:2174]     self.environment.handle_exception()
+[Sat May 18 10:52:25.413506 2024] [wsgi:error] [pid 7739:tid 140127382984448] [remote 37.201.160.212:2174]   File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 939, in handle_exception
+[Sat May 18 10:52:25.413517 2024] [wsgi:error] [pid 7739:tid 140127382984448] [remote 37.201.160.212:2174]     raise rewrite_traceback_stack(source=source)
+[Sat May 18 10:52:25.413528 2024] [wsgi:error] [pid 7739:tid 140127382984448] [remote 37.201.160.212:2174]   File "/var/www/vapeApp/website/templates/remove_vape.html", line 1, in top-level template code
+[Sat May 18 10:52:25.413539 2024] [wsgi:error] [pid 7739:tid 140127382984448] [remote 37.201.160.212:2174]     {% extends "base.html" %}
+[Sat May 18 10:52:25.413550 2024] [wsgi:error] [pid 7739:tid 140127382984448] [remote 37.201.160.212:2174]   File "/var/www/vapeApp/website/templates/base.html", line 51, in top-level template code
+[Sat May 18 10:52:25.413561 2024] [wsgi:error] [pid 7739:tid 140127382984448] [remote 37.201.160.212:2174]     {% block content %}
+[Sat May 18 10:52:25.413572 2024] [wsgi:error] [pid 7739:tid 140127382984448] [remote 37.201.160.212:2174]   File "/var/www/vapeApp/website/templates/remove_vape.html", line 9, in block 'content'
+[Sat May 18 10:52:25.413583 2024] [wsgi:error] [pid 7739:tid 140127382984448] [remote 37.201.160.212:2174]     {% block vapelist %}
+[Sat May 18 10:52:25.413593 2024] [wsgi:error] [pid 7739:tid 140127382984448] [remote 37.201.160.212:2174]   File "/var/www/vapeApp/website/templates/remove_vape.html", line 12, in block 'vapelist'
+[Sat May 18 10:52:25.413619 2024] [wsgi:error] [pid 7739:tid 140127382984448] [remote 37.201.160.212:2174]     <form action="{{ url_for('rm_vape/'+str(vape.id)) }}" method="post">
+[Sat May 18 10:52:25.413631 2024] [wsgi:error] [pid 7739:tid 140127382984448] [remote 37.201.160.212:2174]   File "/usr/local/lib/python3.7/dist-packages/jinja2/utils.py", line 83, in from_obj
+[Sat May 18 10:52:25.413643 2024] [wsgi:error] [pid 7739:tid 140127382984448] [remote 37.201.160.212:2174]     if hasattr(obj, "jinja_pass_arg"):
+[Sat May 18 10:52:25.413654 2024] [wsgi:error] [pid 7739:tid 140127382984448] [remote 37.201.160.212:2174] jinja2.exceptions.UndefinedError: 'str' is undefined
+[Sat May 18 10:52:26.088812 2024] [wsgi:error] [pid 7739:tid 140127349413632] [remote 37.201.160.212:2188] [2024-05-18 10:52:26,087] ERROR in app: Exception on /delete_vape [GET]
+[Sat May 18 10:52:26.088886 2024] [wsgi:error] [pid 7739:tid 140127349413632] [remote 37.201.160.212:2188] Traceback (most recent call last):
+[Sat May 18 10:52:26.088899 2024] [wsgi:error] [pid 7739:tid 140127349413632] [remote 37.201.160.212:2188]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2529, in wsgi_app
+[Sat May 18 10:52:26.088911 2024] [wsgi:error] [pid 7739:tid 140127349413632] [remote 37.201.160.212:2188]     response = self.full_dispatch_request()
+[Sat May 18 10:52:26.088937 2024] [wsgi:error] [pid 7739:tid 140127349413632] [remote 37.201.160.212:2188]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1825, in full_dispatch_request
+[Sat May 18 10:52:26.088968 2024] [wsgi:error] [pid 7739:tid 140127349413632] [remote 37.201.160.212:2188]     rv = self.handle_user_exception(e)
+[Sat May 18 10:52:26.088980 2024] [wsgi:error] [pid 7739:tid 140127349413632] [remote 37.201.160.212:2188]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1823, in full_dispatch_request
+[Sat May 18 10:52:26.088992 2024] [wsgi:error] [pid 7739:tid 140127349413632] [remote 37.201.160.212:2188]     rv = self.dispatch_request()
+[Sat May 18 10:52:26.089003 2024] [wsgi:error] [pid 7739:tid 140127349413632] [remote 37.201.160.212:2188]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+[Sat May 18 10:52:26.089015 2024] [wsgi:error] [pid 7739:tid 140127349413632] [remote 37.201.160.212:2188]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Sat May 18 10:52:26.089027 2024] [wsgi:error] [pid 7739:tid 140127349413632] [remote 37.201.160.212:2188]   File "/usr/local/lib/python3.7/dist-packages/flask_login/utils.py", line 290, in decorated_view
+[Sat May 18 10:52:26.089039 2024] [wsgi:error] [pid 7739:tid 140127349413632] [remote 37.201.160.212:2188]     return current_app.ensure_sync(func)(*args, **kwargs)
+[Sat May 18 10:52:26.089050 2024] [wsgi:error] [pid 7739:tid 140127349413632] [remote 37.201.160.212:2188]   File "/var/www/vapeApp/website/admin.py", line 114, in delete_vape
+[Sat May 18 10:52:26.089062 2024] [wsgi:error] [pid 7739:tid 140127349413632] [remote 37.201.160.212:2188]     return render_template('remove_vape.html',user=current_user,vapes=vapes)
+[Sat May 18 10:52:26.089074 2024] [wsgi:error] [pid 7739:tid 140127349413632] [remote 37.201.160.212:2188]   File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 147, in render_template
+[Sat May 18 10:52:26.089086 2024] [wsgi:error] [pid 7739:tid 140127349413632] [remote 37.201.160.212:2188]     return _render(app, template, context)
+[Sat May 18 10:52:26.089097 2024] [wsgi:error] [pid 7739:tid 140127349413632] [remote 37.201.160.212:2188]   File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 130, in _render
+[Sat May 18 10:52:26.089109 2024] [wsgi:error] [pid 7739:tid 140127349413632] [remote 37.201.160.212:2188]     rv = template.render(context)
+[Sat May 18 10:52:26.089120 2024] [wsgi:error] [pid 7739:tid 140127349413632] [remote 37.201.160.212:2188]   File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 1304, in render
+[Sat May 18 10:52:26.089133 2024] [wsgi:error] [pid 7739:tid 140127349413632] [remote 37.201.160.212:2188]     self.environment.handle_exception()
+[Sat May 18 10:52:26.089168 2024] [wsgi:error] [pid 7739:tid 140127349413632] [remote 37.201.160.212:2188]   File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 939, in handle_exception
+[Sat May 18 10:52:26.089220 2024] [wsgi:error] [pid 7739:tid 140127349413632] [remote 37.201.160.212:2188]     raise rewrite_traceback_stack(source=source)
+[Sat May 18 10:52:26.089234 2024] [wsgi:error] [pid 7739:tid 140127349413632] [remote 37.201.160.212:2188]   File "/var/www/vapeApp/website/templates/remove_vape.html", line 1, in top-level template code
+[Sat May 18 10:52:26.089246 2024] [wsgi:error] [pid 7739:tid 140127349413632] [remote 37.201.160.212:2188]     {% extends "base.html" %}
+[Sat May 18 10:52:26.089258 2024] [wsgi:error] [pid 7739:tid 140127349413632] [remote 37.201.160.212:2188]   File "/var/www/vapeApp/website/templates/base.html", line 51, in top-level template code
+[Sat May 18 10:52:26.089269 2024] [wsgi:error] [pid 7739:tid 140127349413632] [remote 37.201.160.212:2188]     {% block content %}
+[Sat May 18 10:52:26.089279 2024] [wsgi:error] [pid 7739:tid 140127349413632] [remote 37.201.160.212:2188]   File "/var/www/vapeApp/website/templates/remove_vape.html", line 9, in block 'content'
+[Sat May 18 10:52:26.089291 2024] [wsgi:error] [pid 7739:tid 140127349413632] [remote 37.201.160.212:2188]     {% block vapelist %}
+[Sat May 18 10:52:26.089301 2024] [wsgi:error] [pid 7739:tid 140127349413632] [remote 37.201.160.212:2188]   File "/var/www/vapeApp/website/templates/remove_vape.html", line 12, in block 'vapelist'
+[Sat May 18 10:52:26.089313 2024] [wsgi:error] [pid 7739:tid 140127349413632] [remote 37.201.160.212:2188]     <form action="{{ url_for('rm_vape/'+str(vape.id)) }}" method="post">
+[Sat May 18 10:52:26.089324 2024] [wsgi:error] [pid 7739:tid 140127349413632] [remote 37.201.160.212:2188]   File "/usr/local/lib/python3.7/dist-packages/jinja2/utils.py", line 83, in from_obj
+[Sat May 18 10:52:26.089335 2024] [wsgi:error] [pid 7739:tid 140127349413632] [remote 37.201.160.212:2188]     if hasattr(obj, "jinja_pass_arg"):
+[Sat May 18 10:52:26.089346 2024] [wsgi:error] [pid 7739:tid 140127349413632] [remote 37.201.160.212:2188] jinja2.exceptions.UndefinedError: 'str' is undefined
+[Sat May 18 10:52:49.705686 2024] [wsgi:error] [pid 7825:tid 140362729903872] Database created!
+[Sat May 18 10:52:49.739696 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2192] [2024-05-18 10:52:49,737] ERROR in app: Exception on /delete_vape [GET]
+[Sat May 18 10:52:49.739722 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2192] Traceback (most recent call last):
+[Sat May 18 10:52:49.739726 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2192]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2529, in wsgi_app
+[Sat May 18 10:52:49.739731 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2192]     response = self.full_dispatch_request()
+[Sat May 18 10:52:49.739735 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2192]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1825, in full_dispatch_request
+[Sat May 18 10:52:49.739740 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2192]     rv = self.handle_user_exception(e)
+[Sat May 18 10:52:49.739744 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2192]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1823, in full_dispatch_request
+[Sat May 18 10:52:49.739748 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2192]     rv = self.dispatch_request()
+[Sat May 18 10:52:49.739753 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2192]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+[Sat May 18 10:52:49.739757 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2192]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Sat May 18 10:52:49.739794 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2192]   File "/usr/local/lib/python3.7/dist-packages/flask_login/utils.py", line 290, in decorated_view
+[Sat May 18 10:52:49.739799 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2192]     return current_app.ensure_sync(func)(*args, **kwargs)
+[Sat May 18 10:52:49.739803 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2192]   File "/var/www/vapeApp/website/admin.py", line 114, in delete_vape
+[Sat May 18 10:52:49.739807 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2192]     return render_template('remove_vape.html',user=current_user,vapes=vapes)
+[Sat May 18 10:52:49.739812 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2192]   File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 147, in render_template
+[Sat May 18 10:52:49.739816 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2192]     return _render(app, template, context)
+[Sat May 18 10:52:49.739820 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2192]   File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 130, in _render
+[Sat May 18 10:52:49.739824 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2192]     rv = template.render(context)
+[Sat May 18 10:52:49.739828 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2192]   File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 1304, in render
+[Sat May 18 10:52:49.739832 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2192]     self.environment.handle_exception()
+[Sat May 18 10:52:49.739837 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2192]   File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 939, in handle_exception
+[Sat May 18 10:52:49.739841 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2192]     raise rewrite_traceback_stack(source=source)
+[Sat May 18 10:52:49.739845 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2192]   File "/var/www/vapeApp/website/templates/remove_vape.html", line 1, in top-level template code
+[Sat May 18 10:52:49.739849 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2192]     {% extends "base.html" %}
+[Sat May 18 10:52:49.739853 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2192]   File "/var/www/vapeApp/website/templates/base.html", line 51, in top-level template code
+[Sat May 18 10:52:49.739858 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2192]     {% block content %}
+[Sat May 18 10:52:49.739862 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2192]   File "/var/www/vapeApp/website/templates/remove_vape.html", line 9, in block 'content'
+[Sat May 18 10:52:49.739866 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2192]     {% block vapelist %}
+[Sat May 18 10:52:49.739870 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2192]   File "/var/www/vapeApp/website/templates/remove_vape.html", line 12, in block 'vapelist'
+[Sat May 18 10:52:49.739874 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2192]     <form action="{{ url_for('rm_vape/'+str(vape.id)) }}" method="post">
+[Sat May 18 10:52:49.739878 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2192]   File "/usr/local/lib/python3.7/dist-packages/jinja2/utils.py", line 83, in from_obj
+[Sat May 18 10:52:49.739882 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2192]     if hasattr(obj, "jinja_pass_arg"):
+[Sat May 18 10:52:49.739886 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2192] jinja2.exceptions.UndefinedError: 'str' is undefined
+[Sat May 18 10:52:54.117847 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2195] [2024-05-18 10:52:54,116] ERROR in app: Exception on /delete_vape [GET]
+[Sat May 18 10:52:54.117907 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2195] Traceback (most recent call last):
+[Sat May 18 10:52:54.117920 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2195]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2529, in wsgi_app
+[Sat May 18 10:52:54.117933 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2195]     response = self.full_dispatch_request()
+[Sat May 18 10:52:54.117945 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2195]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1825, in full_dispatch_request
+[Sat May 18 10:52:54.117956 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2195]     rv = self.handle_user_exception(e)
+[Sat May 18 10:52:54.117968 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2195]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1823, in full_dispatch_request
+[Sat May 18 10:52:54.117979 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2195]     rv = self.dispatch_request()
+[Sat May 18 10:52:54.117991 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2195]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+[Sat May 18 10:52:54.118002 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2195]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Sat May 18 10:52:54.118014 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2195]   File "/usr/local/lib/python3.7/dist-packages/flask_login/utils.py", line 290, in decorated_view
+[Sat May 18 10:52:54.118025 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2195]     return current_app.ensure_sync(func)(*args, **kwargs)
+[Sat May 18 10:52:54.118037 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2195]   File "/var/www/vapeApp/website/admin.py", line 114, in delete_vape
+[Sat May 18 10:52:54.118048 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2195]     return render_template('remove_vape.html',user=current_user,vapes=vapes)
+[Sat May 18 10:52:54.118059 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2195]   File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 147, in render_template
+[Sat May 18 10:52:54.118071 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2195]     return _render(app, template, context)
+[Sat May 18 10:52:54.118082 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2195]   File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 130, in _render
+[Sat May 18 10:52:54.118094 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2195]     rv = template.render(context)
+[Sat May 18 10:52:54.118105 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2195]   File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 1304, in render
+[Sat May 18 10:52:54.118116 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2195]     self.environment.handle_exception()
+[Sat May 18 10:52:54.118127 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2195]   File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 939, in handle_exception
+[Sat May 18 10:52:54.118139 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2195]     raise rewrite_traceback_stack(source=source)
+[Sat May 18 10:52:54.118150 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2195]   File "/var/www/vapeApp/website/templates/remove_vape.html", line 1, in top-level template code
+[Sat May 18 10:52:54.118162 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2195]     {% extends "base.html" %}
+[Sat May 18 10:52:54.118183 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2195]   File "/var/www/vapeApp/website/templates/base.html", line 51, in top-level template code
+[Sat May 18 10:52:54.118195 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2195]     {% block content %}
+[Sat May 18 10:52:54.118207 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2195]   File "/var/www/vapeApp/website/templates/remove_vape.html", line 9, in block 'content'
+[Sat May 18 10:52:54.118218 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2195]     {% block vapelist %}
+[Sat May 18 10:52:54.118229 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2195]   File "/var/www/vapeApp/website/templates/remove_vape.html", line 12, in block 'vapelist'
+[Sat May 18 10:52:54.118241 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2195]     <form action="{{ url_for('rm_vape/'+str(vape.id)) }}" method="post">
+[Sat May 18 10:52:54.118252 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2195]   File "/usr/local/lib/python3.7/dist-packages/jinja2/utils.py", line 83, in from_obj
+[Sat May 18 10:52:54.118264 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2195]     if hasattr(obj, "jinja_pass_arg"):
+[Sat May 18 10:52:54.118275 2024] [wsgi:error] [pid 7825:tid 140362729903872] [remote 37.201.160.212:2195] jinja2.exceptions.UndefinedError: 'str' is undefined
+[Sat May 18 10:56:14.240496 2024] [wsgi:error] [pid 8072:tid 140602464491264] Database created!
+[Sat May 18 10:56:14.336093 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2304] [2024-05-18 10:56:14,276] ERROR in app: Exception on /delete_vape [GET]
+[Sat May 18 10:56:14.336133 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2304] Traceback (most recent call last):
+[Sat May 18 10:56:14.336147 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2304]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2529, in wsgi_app
+[Sat May 18 10:56:14.336161 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2304]     response = self.full_dispatch_request()
+[Sat May 18 10:56:14.336174 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2304]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1825, in full_dispatch_request
+[Sat May 18 10:56:14.336187 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2304]     rv = self.handle_user_exception(e)
+[Sat May 18 10:56:14.336200 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2304]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1823, in full_dispatch_request
+[Sat May 18 10:56:14.336213 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2304]     rv = self.dispatch_request()
+[Sat May 18 10:56:14.336226 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2304]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+[Sat May 18 10:56:14.336239 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2304]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Sat May 18 10:56:14.336252 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2304]   File "/usr/local/lib/python3.7/dist-packages/flask_login/utils.py", line 290, in decorated_view
+[Sat May 18 10:56:14.336265 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2304]     return current_app.ensure_sync(func)(*args, **kwargs)
+[Sat May 18 10:56:14.336277 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2304]   File "/var/www/vapeApp/website/admin.py", line 114, in delete_vape
+[Sat May 18 10:56:14.336290 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2304]     return render_template('remove_vape.html',user=current_user,vapes=vapes)
+[Sat May 18 10:56:14.336356 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2304]   File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 147, in render_template
+[Sat May 18 10:56:14.336369 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2304]     return _render(app, template, context)
+[Sat May 18 10:56:14.336380 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2304]   File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 130, in _render
+[Sat May 18 10:56:14.336391 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2304]     rv = template.render(context)
+[Sat May 18 10:56:14.336403 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2304]   File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 1304, in render
+[Sat May 18 10:56:14.336414 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2304]     self.environment.handle_exception()
+[Sat May 18 10:56:14.336425 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2304]   File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 939, in handle_exception
+[Sat May 18 10:56:14.336437 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2304]     raise rewrite_traceback_stack(source=source)
+[Sat May 18 10:56:14.336448 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2304]   File "/var/www/vapeApp/website/templates/remove_vape.html", line 1, in top-level template code
+[Sat May 18 10:56:14.336460 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2304]     {% extends "base.html" %}
+[Sat May 18 10:56:14.336471 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2304]   File "/var/www/vapeApp/website/templates/base.html", line 51, in top-level template code
+[Sat May 18 10:56:14.336482 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2304]     {% block content %}
+[Sat May 18 10:56:14.336493 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2304]   File "/var/www/vapeApp/website/templates/remove_vape.html", line 9, in block 'content'
+[Sat May 18 10:56:14.336505 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2304]     {% block vapelist %}
+[Sat May 18 10:56:14.336516 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2304]   File "/var/www/vapeApp/website/templates/remove_vape.html", line 12, in block 'vapelist'
+[Sat May 18 10:56:14.336527 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2304]     <form action="{{ url_for('rm_vape/'+'{0:d}'.format(vape.id)) }}" method="post">
+[Sat May 18 10:56:14.336539 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2304]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2034, in url_for
+[Sat May 18 10:56:14.336550 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2304]     return self.handle_url_build_error(error, endpoint, values)
+[Sat May 18 10:56:14.336562 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2304]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2028, in url_for
+[Sat May 18 10:56:14.336573 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2304]     force_external=_external,
+[Sat May 18 10:56:14.336584 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2304]   File "/usr/local/lib/python3.7/dist-packages/werkzeug/routing/map.py", line 917, in build
+[Sat May 18 10:56:14.336595 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2304]     raise BuildError(endpoint, values, method, self)
+[Sat May 18 10:56:14.336607 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2304] werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'rm_vape/1'. Did you mean 'admin.delete_vape' instead?
+[Sat May 18 10:56:27.997874 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2307] [2024-05-18 10:56:27,996] ERROR in app: Exception on /delete_vape [GET]
+[Sat May 18 10:56:27.997895 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2307] Traceback (most recent call last):
+[Sat May 18 10:56:27.997900 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2307]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2529, in wsgi_app
+[Sat May 18 10:56:27.997904 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2307]     response = self.full_dispatch_request()
+[Sat May 18 10:56:27.997909 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2307]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1825, in full_dispatch_request
+[Sat May 18 10:56:27.997913 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2307]     rv = self.handle_user_exception(e)
+[Sat May 18 10:56:27.997917 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2307]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1823, in full_dispatch_request
+[Sat May 18 10:56:27.997922 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2307]     rv = self.dispatch_request()
+[Sat May 18 10:56:27.997926 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2307]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+[Sat May 18 10:56:27.997930 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2307]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Sat May 18 10:56:27.997934 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2307]   File "/usr/local/lib/python3.7/dist-packages/flask_login/utils.py", line 290, in decorated_view
+[Sat May 18 10:56:27.997938 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2307]     return current_app.ensure_sync(func)(*args, **kwargs)
+[Sat May 18 10:56:27.997943 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2307]   File "/var/www/vapeApp/website/admin.py", line 114, in delete_vape
+[Sat May 18 10:56:27.997947 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2307]     return render_template('remove_vape.html',user=current_user,vapes=vapes)
+[Sat May 18 10:56:27.997951 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2307]   File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 147, in render_template
+[Sat May 18 10:56:27.997955 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2307]     return _render(app, template, context)
+[Sat May 18 10:56:27.997959 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2307]   File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 130, in _render
+[Sat May 18 10:56:27.997963 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2307]     rv = template.render(context)
+[Sat May 18 10:56:27.997967 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2307]   File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 1304, in render
+[Sat May 18 10:56:27.997972 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2307]     self.environment.handle_exception()
+[Sat May 18 10:56:27.997976 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2307]   File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 939, in handle_exception
+[Sat May 18 10:56:27.997980 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2307]     raise rewrite_traceback_stack(source=source)
+[Sat May 18 10:56:27.997984 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2307]   File "/var/www/vapeApp/website/templates/remove_vape.html", line 1, in top-level template code
+[Sat May 18 10:56:27.998001 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2307]     {% extends "base.html" %}
+[Sat May 18 10:56:27.998006 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2307]   File "/var/www/vapeApp/website/templates/base.html", line 51, in top-level template code
+[Sat May 18 10:56:27.998010 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2307]     {% block content %}
+[Sat May 18 10:56:27.998014 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2307]   File "/var/www/vapeApp/website/templates/remove_vape.html", line 9, in block 'content'
+[Sat May 18 10:56:27.998019 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2307]     {% block vapelist %}
+[Sat May 18 10:56:27.998023 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2307]   File "/var/www/vapeApp/website/templates/remove_vape.html", line 12, in block 'vapelist'
+[Sat May 18 10:56:27.998027 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2307]     <form action="{{ url_for('rm_vape/'+'{0:d}'.format(vape.id)) }}" method="post">
+[Sat May 18 10:56:27.998031 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2307]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2034, in url_for
+[Sat May 18 10:56:27.998035 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2307]     return self.handle_url_build_error(error, endpoint, values)
+[Sat May 18 10:56:27.998039 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2307]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2028, in url_for
+[Sat May 18 10:56:27.998044 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2307]     force_external=_external,
+[Sat May 18 10:56:27.998048 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2307]   File "/usr/local/lib/python3.7/dist-packages/werkzeug/routing/map.py", line 917, in build
+[Sat May 18 10:56:27.998052 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2307]     raise BuildError(endpoint, values, method, self)
+[Sat May 18 10:56:27.998056 2024] [wsgi:error] [pid 8072:tid 140602464491264] [remote 37.201.160.212:2307] werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'rm_vape/1'. Did you mean 'admin.delete_vape' instead?
+[Sat May 18 10:57:59.197447 2024] [wsgi:error] [pid 8195:tid 139987412272896] Database created!
+[Sat May 18 10:58:09.193001 2024] [wsgi:error] [pid 8195:tid 139987403880192] [remote 37.201.160.212:2329] [2024-05-18 10:58:09,190] ERROR in app: Exception on /delete_vape [GET]
+[Sat May 18 10:58:09.193023 2024] [wsgi:error] [pid 8195:tid 139987403880192] [remote 37.201.160.212:2329] Traceback (most recent call last):
+[Sat May 18 10:58:09.193029 2024] [wsgi:error] [pid 8195:tid 139987403880192] [remote 37.201.160.212:2329]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2529, in wsgi_app
+[Sat May 18 10:58:09.193034 2024] [wsgi:error] [pid 8195:tid 139987403880192] [remote 37.201.160.212:2329]     response = self.full_dispatch_request()
+[Sat May 18 10:58:09.193039 2024] [wsgi:error] [pid 8195:tid 139987403880192] [remote 37.201.160.212:2329]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1825, in full_dispatch_request
+[Sat May 18 10:58:09.193043 2024] [wsgi:error] [pid 8195:tid 139987403880192] [remote 37.201.160.212:2329]     rv = self.handle_user_exception(e)
+[Sat May 18 10:58:09.193048 2024] [wsgi:error] [pid 8195:tid 139987403880192] [remote 37.201.160.212:2329]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1823, in full_dispatch_request
+[Sat May 18 10:58:09.193053 2024] [wsgi:error] [pid 8195:tid 139987403880192] [remote 37.201.160.212:2329]     rv = self.dispatch_request()
+[Sat May 18 10:58:09.193058 2024] [wsgi:error] [pid 8195:tid 139987403880192] [remote 37.201.160.212:2329]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+[Sat May 18 10:58:09.193094 2024] [wsgi:error] [pid 8195:tid 139987403880192] [remote 37.201.160.212:2329]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Sat May 18 10:58:09.193099 2024] [wsgi:error] [pid 8195:tid 139987403880192] [remote 37.201.160.212:2329]   File "/usr/local/lib/python3.7/dist-packages/flask_login/utils.py", line 290, in decorated_view
+[Sat May 18 10:58:09.193104 2024] [wsgi:error] [pid 8195:tid 139987403880192] [remote 37.201.160.212:2329]     return current_app.ensure_sync(func)(*args, **kwargs)
+[Sat May 18 10:58:09.193108 2024] [wsgi:error] [pid 8195:tid 139987403880192] [remote 37.201.160.212:2329]   File "/var/www/vapeApp/website/admin.py", line 114, in delete_vape
+[Sat May 18 10:58:09.193112 2024] [wsgi:error] [pid 8195:tid 139987403880192] [remote 37.201.160.212:2329]     return render_template('remove_vape.html',user=current_user,vapes=vapes)
+[Sat May 18 10:58:09.193116 2024] [wsgi:error] [pid 8195:tid 139987403880192] [remote 37.201.160.212:2329]   File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 147, in render_template
+[Sat May 18 10:58:09.193121 2024] [wsgi:error] [pid 8195:tid 139987403880192] [remote 37.201.160.212:2329]     return _render(app, template, context)
+[Sat May 18 10:58:09.193125 2024] [wsgi:error] [pid 8195:tid 139987403880192] [remote 37.201.160.212:2329]   File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 130, in _render
+[Sat May 18 10:58:09.193129 2024] [wsgi:error] [pid 8195:tid 139987403880192] [remote 37.201.160.212:2329]     rv = template.render(context)
+[Sat May 18 10:58:09.193133 2024] [wsgi:error] [pid 8195:tid 139987403880192] [remote 37.201.160.212:2329]   File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 1304, in render
+[Sat May 18 10:58:09.193137 2024] [wsgi:error] [pid 8195:tid 139987403880192] [remote 37.201.160.212:2329]     self.environment.handle_exception()
+[Sat May 18 10:58:09.193141 2024] [wsgi:error] [pid 8195:tid 139987403880192] [remote 37.201.160.212:2329]   File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 939, in handle_exception
+[Sat May 18 10:58:09.193146 2024] [wsgi:error] [pid 8195:tid 139987403880192] [remote 37.201.160.212:2329]     raise rewrite_traceback_stack(source=source)
+[Sat May 18 10:58:09.193150 2024] [wsgi:error] [pid 8195:tid 139987403880192] [remote 37.201.160.212:2329]   File "/var/www/vapeApp/website/templates/remove_vape.html", line 1, in top-level template code
+[Sat May 18 10:58:09.193154 2024] [wsgi:error] [pid 8195:tid 139987403880192] [remote 37.201.160.212:2329]     {% extends "base.html" %}
+[Sat May 18 10:58:09.193158 2024] [wsgi:error] [pid 8195:tid 139987403880192] [remote 37.201.160.212:2329]   File "/var/www/vapeApp/website/templates/base.html", line 51, in top-level template code
+[Sat May 18 10:58:09.193162 2024] [wsgi:error] [pid 8195:tid 139987403880192] [remote 37.201.160.212:2329]     {% block content %}
+[Sat May 18 10:58:09.193166 2024] [wsgi:error] [pid 8195:tid 139987403880192] [remote 37.201.160.212:2329]   File "/var/www/vapeApp/website/templates/remove_vape.html", line 9, in block 'content'
+[Sat May 18 10:58:09.193170 2024] [wsgi:error] [pid 8195:tid 139987403880192] [remote 37.201.160.212:2329]     {% block vapelist %}
+[Sat May 18 10:58:09.193190 2024] [wsgi:error] [pid 8195:tid 139987403880192] [remote 37.201.160.212:2329]   File "/var/www/vapeApp/website/templates/remove_vape.html", line 12, in block 'vapelist'
+[Sat May 18 10:58:09.193196 2024] [wsgi:error] [pid 8195:tid 139987403880192] [remote 37.201.160.212:2329]     <form action="{{ url_for('remove_vape', id='{0:d}'.format(vape.id) ) }}" method="post">
+[Sat May 18 10:58:09.193200 2024] [wsgi:error] [pid 8195:tid 139987403880192] [remote 37.201.160.212:2329]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2034, in url_for
+[Sat May 18 10:58:09.193205 2024] [wsgi:error] [pid 8195:tid 139987403880192] [remote 37.201.160.212:2329]     return self.handle_url_build_error(error, endpoint, values)
+[Sat May 18 10:58:09.193218 2024] [wsgi:error] [pid 8195:tid 139987403880192] [remote 37.201.160.212:2329]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2028, in url_for
+[Sat May 18 10:58:09.193223 2024] [wsgi:error] [pid 8195:tid 139987403880192] [remote 37.201.160.212:2329]     force_external=_external,
+[Sat May 18 10:58:09.193227 2024] [wsgi:error] [pid 8195:tid 139987403880192] [remote 37.201.160.212:2329]   File "/usr/local/lib/python3.7/dist-packages/werkzeug/routing/map.py", line 917, in build
+[Sat May 18 10:58:09.193231 2024] [wsgi:error] [pid 8195:tid 139987403880192] [remote 37.201.160.212:2329]     raise BuildError(endpoint, values, method, self)
+[Sat May 18 10:58:09.193236 2024] [wsgi:error] [pid 8195:tid 139987403880192] [remote 37.201.160.212:2329] werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'remove_vape' with values ['id']. Did you mean 'admin.remove_vape' instead?
+[Sat May 18 10:58:30.418282 2024] [wsgi:error] [pid 8365:tid 139746076047104] Database created!
+[Sat May 18 10:58:30.452618 2024] [wsgi:error] [pid 8365:tid 139746076047104] [remote 37.201.160.212:2331] [2024-05-18 10:58:30,450] ERROR in app: Exception on /delete_vape [GET]
+[Sat May 18 10:58:30.452642 2024] [wsgi:error] [pid 8365:tid 139746076047104] [remote 37.201.160.212:2331] Traceback (most recent call last):
+[Sat May 18 10:58:30.452647 2024] [wsgi:error] [pid 8365:tid 139746076047104] [remote 37.201.160.212:2331]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2529, in wsgi_app
+[Sat May 18 10:58:30.452652 2024] [wsgi:error] [pid 8365:tid 139746076047104] [remote 37.201.160.212:2331]     response = self.full_dispatch_request()
+[Sat May 18 10:58:30.452656 2024] [wsgi:error] [pid 8365:tid 139746076047104] [remote 37.201.160.212:2331]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1825, in full_dispatch_request
+[Sat May 18 10:58:30.452660 2024] [wsgi:error] [pid 8365:tid 139746076047104] [remote 37.201.160.212:2331]     rv = self.handle_user_exception(e)
+[Sat May 18 10:58:30.452664 2024] [wsgi:error] [pid 8365:tid 139746076047104] [remote 37.201.160.212:2331]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1823, in full_dispatch_request
+[Sat May 18 10:58:30.452669 2024] [wsgi:error] [pid 8365:tid 139746076047104] [remote 37.201.160.212:2331]     rv = self.dispatch_request()
+[Sat May 18 10:58:30.452673 2024] [wsgi:error] [pid 8365:tid 139746076047104] [remote 37.201.160.212:2331]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+[Sat May 18 10:58:30.452677 2024] [wsgi:error] [pid 8365:tid 139746076047104] [remote 37.201.160.212:2331]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Sat May 18 10:58:30.452681 2024] [wsgi:error] [pid 8365:tid 139746076047104] [remote 37.201.160.212:2331]   File "/usr/local/lib/python3.7/dist-packages/flask_login/utils.py", line 290, in decorated_view
+[Sat May 18 10:58:30.452686 2024] [wsgi:error] [pid 8365:tid 139746076047104] [remote 37.201.160.212:2331]     return current_app.ensure_sync(func)(*args, **kwargs)
+[Sat May 18 10:58:30.452690 2024] [wsgi:error] [pid 8365:tid 139746076047104] [remote 37.201.160.212:2331]   File "/var/www/vapeApp/website/admin.py", line 114, in delete_vape
+[Sat May 18 10:58:30.452694 2024] [wsgi:error] [pid 8365:tid 139746076047104] [remote 37.201.160.212:2331]     return render_template('remove_vape.html',user=current_user,vapes=vapes)
+[Sat May 18 10:58:30.452698 2024] [wsgi:error] [pid 8365:tid 139746076047104] [remote 37.201.160.212:2331]   File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 147, in render_template
+[Sat May 18 10:58:30.452702 2024] [wsgi:error] [pid 8365:tid 139746076047104] [remote 37.201.160.212:2331]     return _render(app, template, context)
+[Sat May 18 10:58:30.452706 2024] [wsgi:error] [pid 8365:tid 139746076047104] [remote 37.201.160.212:2331]   File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 130, in _render
+[Sat May 18 10:58:30.452746 2024] [wsgi:error] [pid 8365:tid 139746076047104] [remote 37.201.160.212:2331]     rv = template.render(context)
+[Sat May 18 10:58:30.452750 2024] [wsgi:error] [pid 8365:tid 139746076047104] [remote 37.201.160.212:2331]   File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 1304, in render
+[Sat May 18 10:58:30.452755 2024] [wsgi:error] [pid 8365:tid 139746076047104] [remote 37.201.160.212:2331]     self.environment.handle_exception()
+[Sat May 18 10:58:30.452759 2024] [wsgi:error] [pid 8365:tid 139746076047104] [remote 37.201.160.212:2331]   File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 939, in handle_exception
+[Sat May 18 10:58:30.452763 2024] [wsgi:error] [pid 8365:tid 139746076047104] [remote 37.201.160.212:2331]     raise rewrite_traceback_stack(source=source)
+[Sat May 18 10:58:30.452767 2024] [wsgi:error] [pid 8365:tid 139746076047104] [remote 37.201.160.212:2331]   File "/var/www/vapeApp/website/templates/remove_vape.html", line 1, in top-level template code
+[Sat May 18 10:58:30.452771 2024] [wsgi:error] [pid 8365:tid 139746076047104] [remote 37.201.160.212:2331]     {% extends "base.html" %}
+[Sat May 18 10:58:30.452775 2024] [wsgi:error] [pid 8365:tid 139746076047104] [remote 37.201.160.212:2331]   File "/var/www/vapeApp/website/templates/base.html", line 51, in top-level template code
+[Sat May 18 10:58:30.452780 2024] [wsgi:error] [pid 8365:tid 139746076047104] [remote 37.201.160.212:2331]     {% block content %}
+[Sat May 18 10:58:30.452784 2024] [wsgi:error] [pid 8365:tid 139746076047104] [remote 37.201.160.212:2331]   File "/var/www/vapeApp/website/templates/remove_vape.html", line 9, in block 'content'
+[Sat May 18 10:58:30.452788 2024] [wsgi:error] [pid 8365:tid 139746076047104] [remote 37.201.160.212:2331]     {% block vapelist %}
+[Sat May 18 10:58:30.452792 2024] [wsgi:error] [pid 8365:tid 139746076047104] [remote 37.201.160.212:2331]   File "/var/www/vapeApp/website/templates/remove_vape.html", line 12, in block 'vapelist'
+[Sat May 18 10:58:30.452796 2024] [wsgi:error] [pid 8365:tid 139746076047104] [remote 37.201.160.212:2331]     <form action="{{ url_for('remove_vape', id='{0:d}'.format(vape.id) ) }}" method="post">
+[Sat May 18 10:58:30.452800 2024] [wsgi:error] [pid 8365:tid 139746076047104] [remote 37.201.160.212:2331]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2034, in url_for
+[Sat May 18 10:58:30.452804 2024] [wsgi:error] [pid 8365:tid 139746076047104] [remote 37.201.160.212:2331]     return self.handle_url_build_error(error, endpoint, values)
+[Sat May 18 10:58:30.452809 2024] [wsgi:error] [pid 8365:tid 139746076047104] [remote 37.201.160.212:2331]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2028, in url_for
+[Sat May 18 10:58:30.452813 2024] [wsgi:error] [pid 8365:tid 139746076047104] [remote 37.201.160.212:2331]     force_external=_external,
+[Sat May 18 10:58:30.452817 2024] [wsgi:error] [pid 8365:tid 139746076047104] [remote 37.201.160.212:2331]   File "/usr/local/lib/python3.7/dist-packages/werkzeug/routing/map.py", line 917, in build
+[Sat May 18 10:58:30.452821 2024] [wsgi:error] [pid 8365:tid 139746076047104] [remote 37.201.160.212:2331]     raise BuildError(endpoint, values, method, self)
+[Sat May 18 10:58:30.452825 2024] [wsgi:error] [pid 8365:tid 139746076047104] [remote 37.201.160.212:2331] werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'remove_vape' with values ['id']. Did you mean 'admin.remove_vape' instead?
+[Sat May 18 10:59:16.716152 2024] [wsgi:error] [pid 8620:tid 139732353701632] Database created!
+[Sat May 18 10:59:50.849327 2024] [wsgi:error] [pid 8713:tid 139954529752832] Database created!
+[Sat May 18 11:00:35.425517 2024] [wsgi:error] [pid 8814:tid 139895451932416] Database created!
+[Sat May 18 11:01:35.365842 2024] [wsgi:error] [pid 8914:tid 140086140393216] Database created!
+[Sat May 18 11:02:22.374985 2024] [wsgi:error] [pid 9018:tid 140657359181568] Database created!
+[Sat May 18 11:26:59.097986 2024] [wsgi:error] [pid 9018:tid 140657334003456] [remote 37.201.160.212:2673] ImmutableMultiDict([])
+[Sat May 18 11:27:48.039912 2024] [wsgi:error] [pid 9018:tid 140657359181568] [remote 93.231.130.227:52558] Die Vape Blueberry Cranberry Cherry Savage 600 Z\xc3\xbcge 6 6_blueberry_cranberry_cherry_savage.png wurde hinzugef\xc3\xbcgt!
+[Sun May 19 17:03:48.638371 2024] [wsgi:error] [pid 626:tid 140240618411776] Database created!
+[Sun May 19 17:04:08.158776 2024] [wsgi:error] [pid 626:tid 140240593233664] [remote 37.201.160.212:8195] ImmutableMultiDict([])
+[Sun May 19 17:05:00.338835 2024] [wsgi:error] [pid 626:tid 140240593233664] [remote 37.201.160.212:8243] Die Vape sCHWANZT Savage 1 Z\xc3\xbcge 1 1_schwanzt_savage.png wurde hinzugef\xc3\xbcgt!
+[Mon May 20 00:17:28.502621 2024] [wsgi:error] [pid 12396:tid 140240618411776] Database created!
+[Tue Jul 30 16:49:46.367263 2024] [wsgi:error] [pid 602:tid 140176094803712] Database created!
+[Tue Jul 30 17:02:38.902299 2024] [wsgi:error] [pid 598:tid 140384266700544] Database created!
+[Tue Jul 30 20:40:24.052559 2024] [core:error] [pid 600:tid 140384218900224] [client 185.133.250.73:33706] AH00126: Invalid URI in request POST /cgi-bin/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/bin/sh HTTP/1.1
+[Tue Jul 30 21:38:39.989028 2024] [core:error] [pid 600:tid 140383270983424] [client 198.7.127.86:47614] AH00126: Invalid URI in request POST /cgi-bin/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/.%2e/bin/sh HTTP/1.1
+[Wed Jul 31 00:23:58.418595 2024] [wsgi:error] [pid 1471:tid 140384283485952] Database created!
+[Wed Jul 31 02:32:06.760439 2024] [wsgi:error] [pid 1475:tid 140384143365888] [client 175.107.2.125:54834] mod_wsgi (pid=1475): Request data read error when proxying data to daemon process: Partial results are valid but processing is incomplete.
+[Wed Aug 07 14:45:51.002486 2024] [wsgi:error] [pid 632:tid 139703928198912] Database created!
+[Wed Aug 07 14:55:44.126282 2024] [wsgi:error] [pid 632:tid 139703928198912] [remote 37.201.160.212:12106] Account erstellt: admin123 Passwort: 123 success
+[Wed Aug 07 14:56:03.053491 2024] [wsgi:error] [pid 632:tid 139703911413504] [remote 37.201.160.212:12128] ImmutableMultiDict([])
+[Wed Aug 07 14:56:09.447292 2024] [wsgi:error] [pid 632:tid 139703911413504] [remote 37.201.160.212:12129] ImmutableMultiDict([])
+[Wed Aug 07 14:56:24.993109 2024] [wsgi:error] [pid 632:tid 139703928198912] [remote 37.201.160.212:12144] ImmutableMultiDict([])
+[Wed Aug 07 15:00:18.777897 2024] [wsgi:error] [pid 632:tid 139703928198912] [remote 37.201.160.212:12160] ImmutableMultiDict([])
+[Wed Aug 07 15:03:55.045811 2024] [wsgi:error] [pid 632:tid 139703911413504] [remote 37.201.160.212:12369] Die Vape Blueberry on Ice Savage 8000 Z\xc3\xbcge 10 10_blueberry_on_ice_savage.png wurde hinzugef\xc3\xbcgt!
+[Wed Aug 07 15:08:56.511047 2024] [wsgi:error] [pid 592:tid 139716910941952] Database created!
+[Wed Aug 07 15:09:28.250357 2024] [wsgi:error] [pid 592:tid 139716927727360] [remote 37.201.160.212:12443] Die Vape Blueberry on Ice Savage 8000 Z\xc3\xbcge 10 10_blueberry_on_ice_savage.png wurde hinzugef\xc3\xbcgt!
+[Wed Aug 07 15:23:38.858441 2024] [wsgi:error] [pid 596:tid 139783682807552] Database created!
+[Wed Aug 07 15:23:50.213549 2024] [wsgi:error] [pid 596:tid 139783691200256] [remote 37.201.160.212:12549] [2024-08-07 15:23:50,153] ERROR in app: Exception on /rm_vape/1 [POST]
+[Wed Aug 07 15:23:50.213585 2024] [wsgi:error] [pid 596:tid 139783691200256] [remote 37.201.160.212:12549] Traceback (most recent call last):
+[Wed Aug 07 15:23:50.213596 2024] [wsgi:error] [pid 596:tid 139783691200256] [remote 37.201.160.212:12549]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2529, in wsgi_app
+[Wed Aug 07 15:23:50.213606 2024] [wsgi:error] [pid 596:tid 139783691200256] [remote 37.201.160.212:12549]     response = self.full_dispatch_request()
+[Wed Aug 07 15:23:50.213616 2024] [wsgi:error] [pid 596:tid 139783691200256] [remote 37.201.160.212:12549]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1825, in full_dispatch_request
+[Wed Aug 07 15:23:50.213644 2024] [wsgi:error] [pid 596:tid 139783691200256] [remote 37.201.160.212:12549]     rv = self.handle_user_exception(e)
+[Wed Aug 07 15:23:50.213653 2024] [wsgi:error] [pid 596:tid 139783691200256] [remote 37.201.160.212:12549]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1823, in full_dispatch_request
+[Wed Aug 07 15:23:50.213662 2024] [wsgi:error] [pid 596:tid 139783691200256] [remote 37.201.160.212:12549]     rv = self.dispatch_request()
+[Wed Aug 07 15:23:50.213670 2024] [wsgi:error] [pid 596:tid 139783691200256] [remote 37.201.160.212:12549]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+[Wed Aug 07 15:23:50.213679 2024] [wsgi:error] [pid 596:tid 139783691200256] [remote 37.201.160.212:12549]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Wed Aug 07 15:23:50.213687 2024] [wsgi:error] [pid 596:tid 139783691200256] [remote 37.201.160.212:12549]   File "/var/www/vapeApp/website/admin.py", line 121, in remove_vape
+[Wed Aug 07 15:23:50.213696 2024] [wsgi:error] [pid 596:tid 139783691200256] [remote 37.201.160.212:12549]     vape.anzahl -= anzahl
+[Wed Aug 07 15:23:50.213704 2024] [wsgi:error] [pid 596:tid 139783691200256] [remote 37.201.160.212:12549] TypeError: unsupported operand type(s) for -=: 'int' and 'str'
+[Wed Aug 07 15:24:12.546098 2024] [wsgi:error] [pid 596:tid 139783682807552] [remote 37.201.160.212:12555] [2024-08-07 15:24:12,545] ERROR in app: Exception on /rm_vape/1 [POST]
+[Wed Aug 07 15:24:12.546140 2024] [wsgi:error] [pid 596:tid 139783682807552] [remote 37.201.160.212:12555] Traceback (most recent call last):
+[Wed Aug 07 15:24:12.546154 2024] [wsgi:error] [pid 596:tid 139783682807552] [remote 37.201.160.212:12555]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2529, in wsgi_app
+[Wed Aug 07 15:24:12.546167 2024] [wsgi:error] [pid 596:tid 139783682807552] [remote 37.201.160.212:12555]     response = self.full_dispatch_request()
+[Wed Aug 07 15:24:12.546179 2024] [wsgi:error] [pid 596:tid 139783682807552] [remote 37.201.160.212:12555]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1825, in full_dispatch_request
+[Wed Aug 07 15:24:12.546192 2024] [wsgi:error] [pid 596:tid 139783682807552] [remote 37.201.160.212:12555]     rv = self.handle_user_exception(e)
+[Wed Aug 07 15:24:12.546204 2024] [wsgi:error] [pid 596:tid 139783682807552] [remote 37.201.160.212:12555]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1823, in full_dispatch_request
+[Wed Aug 07 15:24:12.546217 2024] [wsgi:error] [pid 596:tid 139783682807552] [remote 37.201.160.212:12555]     rv = self.dispatch_request()
+[Wed Aug 07 15:24:12.546229 2024] [wsgi:error] [pid 596:tid 139783682807552] [remote 37.201.160.212:12555]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1799, in dispatch_request
+[Wed Aug 07 15:24:12.546241 2024] [wsgi:error] [pid 596:tid 139783682807552] [remote 37.201.160.212:12555]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Wed Aug 07 15:24:12.546253 2024] [wsgi:error] [pid 596:tid 139783682807552] [remote 37.201.160.212:12555]   File "/var/www/vapeApp/website/admin.py", line 121, in remove_vape
+[Wed Aug 07 15:24:12.546265 2024] [wsgi:error] [pid 596:tid 139783682807552] [remote 37.201.160.212:12555]     vape.anzahl -= anzahl
+[Wed Aug 07 15:24:12.546277 2024] [wsgi:error] [pid 596:tid 139783682807552] [remote 37.201.160.212:12555] TypeError: unsupported operand type(s) for -=: 'int' and 'str'
+[Wed Aug 07 15:31:51.791855 2024] [wsgi:error] [pid 602:tid 140531047081728] Database created!
+[Wed Aug 07 15:32:25.699987 2024] [wsgi:error] [pid 602:tid 140531047081728] [remote 37.201.160.212:12684] ImmutableMultiDict([])
+[Wed Aug 07 15:32:31.919195 2024] [wsgi:error] [pid 602:tid 140531021903616] [remote 37.201.160.212:12685] ImmutableMultiDict([])
+[Wed Aug 07 15:32:43.829757 2024] [wsgi:error] [pid 602:tid 140531047081728] [remote 37.201.160.212:12688] Marke Savage vape wurde hinzugef\xc3\xbcgt!
+[Wed Aug 07 15:43:58.832822 2024] [wsgi:error] [pid 602:tid 140531047081728] [remote 37.201.160.212:12853] Die Vape Blue Razz Ice Savage vape 8000 Z\xc3\xbcge 10 10_blue_razz_ice_savage_vape.png wurde hinzugef\xc3\xbcgt!
+[Wed Aug 07 15:44:09.705725 2024] [wsgi:error] [pid 602:tid 140531030296320] [remote 37.201.160.212:12856] Die Vape Tripple Berry Ice Savage vape 8000 Z\xc3\xbcge 10 10_tripple_berry_ice_savage_vape.png wurde hinzugef\xc3\xbcgt!
+[Wed Aug 07 15:44:24.815685 2024] [wsgi:error] [pid 602:tid 140531047081728] [remote 37.201.160.212:12861] Die Vape Energy Savage vape 8000 Z\xc3\xbcge 10 10_energy_savage_vape.png wurde hinzugef\xc3\xbcgt!
+[Wed Aug 07 15:44:35.381274 2024] [wsgi:error] [pid 602:tid 140531030296320] [remote 37.201.160.212:12862] Die Vape Watermelon Ice Savage vape 8000 Z\xc3\xbcge 10 10_watermelon_ice_savage_vape.png wurde hinzugef\xc3\xbcgt!
+[Wed Aug 07 15:47:18.197361 2024] [wsgi:error] [pid 602:tid 140531047081728] [remote 37.201.160.212:13016] ImmutableMultiDict([])
+[Wed Aug 07 15:47:40.125113 2024] [wsgi:error] [pid 602:tid 140531021903616] [remote 37.201.160.212:13023] Die Vape Blue Razz Ice Savage vape 8000 Z\xc3\xbcge 10 10_blue_razz_ice_savage_vape.png wurde hinzugef\xc3\xbcgt!
+[Wed Aug 07 15:49:51.484517 2024] [wsgi:error] [pid 602:tid 140531021903616] [remote 37.201.160.212:13083] Die Vape Blue Razz Ice Savage vape 8000 Z\xc3\xbcge 10 10_blue_razz_ice_savage_vape.png wurde hinzugef\xc3\xbcgt!
+[Wed Aug 07 15:51:37.800358 2024] [wsgi:error] [pid 602:tid 140531030296320] [remote 37.201.160.212:13136] Die Vape Blue Razz Ice Savage vape 8000 Z\xc3\xbcge 10 10_blue_razz_ice_savage_vape.png wurde hinzugef\xc3\xbcgt!
+[Wed Aug 07 15:54:41.717741 2024] [wsgi:error] [pid 602:tid 140531021903616] [remote 37.201.160.212:13300] Die Vape Blue Razz Ice Savage vape 8000 Z\xc3\xbcge 10 10_blue_razz_ice_savage_vape.png wurde hinzugef\xc3\xbcgt!
+[Wed Aug 07 15:55:50.012687 2024] [wsgi:error] [pid 602:tid 140531030296320] [remote 37.201.160.212:13309] Die Vape Tripple Berry Ice Savage vape 8000 Z\xc3\xbcge 10 10_tripple_berry_ice_savage_vape.png wurde hinzugef\xc3\xbcgt!
+[Wed Aug 07 15:56:01.382491 2024] [wsgi:error] [pid 602:tid 140531021903616] [remote 37.201.160.212:13312] Die Vape Energy Savage vape 8000 Z\xc3\xbcge 10 10_energy_savage_vape.png wurde hinzugef\xc3\xbcgt!
+[Wed Aug 07 15:56:41.435601 2024] [wsgi:error] [pid 602:tid 140531047081728] [remote 37.201.160.212:13324] Die Vape Watermelon On Ice Savage vape 8000 Z\xc3\xbcge 10 10_watermelon_on_ice_savage_vape.png wurde hinzugef\xc3\xbcgt!
+[Wed Aug 07 15:56:56.910697 2024] [wsgi:error] [pid 602:tid 140531030296320] [remote 37.201.160.212:13328] Die Vape Tripple Melon Savage vape 8000 Z\xc3\xbcge 10 10_tripple_melon_savage_vape.png wurde hinzugef\xc3\xbcgt!
+[Wed Aug 07 15:57:24.361367 2024] [wsgi:error] [pid 602:tid 140531047081728] [remote 37.201.160.212:13334] Die Vape Triple Mango Savage vape 8000 Z\xc3\xbcge 10 10_triple_mango_savage_vape.png wurde hinzugef\xc3\xbcgt!
+[Wed Aug 07 15:58:39.986785 2024] [wsgi:error] [pid 602:tid 140531021903616] [remote 37.201.160.212:13359] Die Vape Triple Berry Ice Savage vape 8000 Z\xc3\xbcge 10 10_triple_berry_ice_savage_vape.png wurde hinzugef\xc3\xbcgt!
+[Wed Aug 07 15:59:02.511400 2024] [wsgi:error] [pid 602:tid 140531021903616] [remote 37.201.160.212:13363] Die Vape Triple Melon Savage vape 8000 Z\xc3\xbcge 10 10_triple_melon_savage_vape.png wurde hinzugef\xc3\xbcgt!
+[Wed Aug 07 15:59:46.946541 2024] [wsgi:error] [pid 602:tid 140531021903616] [remote 37.201.160.212:13377] Die Vape Kiwi Passion Fruit Guava Savage vape 8000 Z\xc3\xbcge 10 10_kiwi_passion_fruit_guava_savage_vape.png wurde hinzugef\xc3\xbcgt!
+[Wed Aug 07 16:00:14.911006 2024] [wsgi:error] [pid 602:tid 140531047081728] [remote 37.201.160.212:13378] Die Vape Strawberry Kiwi Savage vape 8000 Z\xc3\xbcge 10 10_strawberry_kiwi_savage_vape.png wurde hinzugef\xc3\xbcgt!
+[Wed Aug 07 16:01:08.277957 2024] [wsgi:error] [pid 602:tid 140531030296320] [remote 37.201.160.212:13400] Die Vape Blueberrry Ice Savage vape 8000 Z\xc3\xbcge 10 10_blueberrry_ice_savage_vape.png wurde hinzugef\xc3\xbcgt!
+[Wed Aug 07 16:01:30.006162 2024] [wsgi:error] [pid 602:tid 140531021903616] [remote 37.201.160.212:13416] Die Vape Coconut Pineapple Savage vape 8000 Z\xc3\xbcge 10 10_coconut_pineapple_savage_vape.png wurde hinzugef\xc3\xbcgt!
+[Wed Aug 07 16:05:36.099454 2024] [wsgi:error] [pid 602:tid 140531047081728] [remote 37.201.160.212:13480] Account erstellt: adminACC Passwort: adminACC123 success
+[Mon Aug 12 14:24:33.177445 2024] [wsgi:error] [pid 639:tid 139813510854400] Database created!

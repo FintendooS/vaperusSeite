@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block title %}
+<title>Admin Marke hinzufügen</title>
+{% endblock %}
+{% block customcss %}
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/admin_card.css') }}">
+{% endblock %}
+{% block content %}
+     {% block vapelist %}
+        {% for vape in vapes %}
+                <br>
+            <div class="parent_card vh100">
+                <div class="admin_card child_card" style="max-width:300px;">
+                    <div class="w3-container">
+                        <img src="{{ url_for('admin.uploaded_file', filename=vape.image) }}" alt="{{ vape.image }}" style="width:100%;opacity:0.85;">
+                        <p>Marke: <br>{{ vape.marke }}</p>
+                        <p>Geschmack: <br>{{vape.geschmack}}  </p>
+                        <p>Züge: <br>{{ vape.zuege }}</p>
+                        <p>Noch {{ vape.anzahl }}x da!</p>
+                        <form action="{{ url_for('admin.remove_vape', id='{0:d}'.format(vape.id) ) }}" method="post">
+                          <label for="anzahl_to_remove"><p>Anzahl: </p></label>
+                          <input id="anzahl_to_remove" name="anzahl_to_remove" type="number" value="0">
+                          <button class="w3-btn w3-indigo w3-center">Vape verkauft <i class="fa fa-cross"></i></button>
+                        </form>
+                        <br>
+                        <br>
+                        <br>
+                        <form action="{{ url_for('admin.reservieren', id='{0:d}'.format(vape.id) ) }}" method="post">
+                            <label for="reservere_for">Für wen ist die Reservierung?</label>
+                            <input id="reservere_for"
+                           name="reservere_for"
+                           class="w3-input"
+                           type="text"
+                           placeholder="">
+                          <label for="anzahl_to_reserve"><p>Anzahl: </p></label>
+                          <input id="anzahl_to_reserve" name="anzahl_to_reserve" type="number" value="0">
+                          <button class="w3-btn w3-indigo w3-center">Vape reservieren <i class="fa fa-cross"></i></button>
+                        </form>
+                        <br>
+                    </div>
+                </div>
+                <div class="admin_card child_card" style="">
+                    <div class="w3-container">
+                        <h1>Reservierungen</h1>
+                        <ul>
+                            {% for reservierung in reservierungen %}
+                                {% if vape.geschmack == reservierung.geschmack %}
+                                    <li>
+                                        <p>{{ reservierung.anzahl }}x für {{ reservierung.person }} von {{ reservierung.owner }}</p>
+                                        <div class="reservebutton">
+                                            <form action="{{ url_for('admin.reservierung_succed', id='{0:d}'.format(reservierung.id), vapeid='{0:d}'.format(vape.id)) }}" method="post">
+                                                <button class="w3-button w3-green">Erledigt <i class="fa fa-check"></i></button>
+                                            </form>
+                                            <form action="{{ url_for('admin.reservierung_remove', id='{0:d}'.format(reservierung.id)) }}" method="post">
+                                                <button class="w3-button w3-red">Entfernen <i class="fa fa-cross"></i></button>
+                                            </form>
+                                        </div>
+                                    </li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                <br>
+            </div>
+        {% endfor %}
+    {% endblock %}
+{% endblock %}
